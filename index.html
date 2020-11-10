@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Robert Uebelhor</title>
+
+    <link rel="shortcut icon" href="img/favivcon.png" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Trispace&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+
+    <link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="normalize">
+    <link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+</head>
+
+
+<body>
+<section class="top">  
+    <header class="page-header">
+        <img class="page-header__item" src="img/favicon.png" alt="logo"> 
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="#about" role="menuitem" class="navigation-list__item">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="#work" role="menuitem" class="navigation-list__item">My Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="#contact" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>    
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="profile">
+
+        <p class="profile__name">Robert Uebelhor</p>
+        <p class="profile__dev">Web Developer in Greater Nashville</p>
+        <div class="social-media">
+            <a  href="https://github.com/Gutterstack"><img class="git" src="img/github.png" alt="Github"></a>
+            <a  href="https://www.linkedin.com/in/robert-uebelhor-a32506195/"><img class="link" src="img/linkedin.png" alt="LinkedIn"></a>
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+    <h1 class="about__title">About Me</h1>
+        <div class="about__flex">  
+            <p class="about__descr">My name is Robert and I am an aspiring Web Developer.  
+            I was born and raised in Nashville TN and recently got my Associate's in Cyber Defense.  
+            With a change of heart, I have decided to pursue a career in Web Development with a dream of eventually becoming a digital nomad. </p>
+            <img class="portrait" src="img/portrait.png" alt="portrait">
+        </div>
+        
+    <a href="files/resume.pdf" download class="button">Download my Resume</a>
+</section>    
+        
+    <section id="work">
+            <h1 class="work__title">My Work</h1>
+            <div class="grid">
+                <div class="grid__item">
+                    <h2 class="grid__item--title">Personal Site</h2>
+                    <a href="#"><img class="grid__item--img" src="img/profsite.png" alt="proffesional-site" width="700" height="400"></a>
+                    <p class="grid__item--descr">
+                        My own personal website.<br>
+                        a HTML and CSS. 
+                    </p>
+                </div>
+
+                <div class="grid__item">
+                    <h2 class="grid__item--title">Colombia</h2>
+                    <a href="#"><img src="img/colo.png" alt="Colombia-site" width="700" height="400"></a>
+                    <p class="grid__item--descr">
+                        Expat service for individuals moving to Colombia. (HTML and CSS)
+                    </p>
+                </div>
+                <!-- <div class="grid__item">
+                    <h2>Mobile web app</h2>
+                    <p>
+                        Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
+                        
+                    </p>
+                    <a href="#">See project on Github</a>
+                </div>
+                <div class="grid__item">
+                    <h2>Mobile web app</h2>
+                    <p>
+                        Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
+                    </p>
+                    <a href="#">See project on Github</a>
+                </div>
+                <div class="grid__item">
+                    <h2>Mobile web app</h2>
+                    <p>
+                        Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
+                    </p>
+                    <a href="#">See project on Github</a>
+                </div>
+                <div class="grid__item">
+                    <h2>Mobile web app</h2>
+                    <p>
+                        Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
+                        
+                    </p>
+                    <a href="#">See project on Github</a>
+                </div> -->
+            </div>
+    </section>
+
+    <footer id="contact">
+        <div>
+            <h1 class="contact__title">Contact Me</h1>
+            <h2 class="contact__title2">A Journey Awaits.</h2>
+        </div>
+    
+        <!-- <div>
+            <a href="mailto:ruebe@webdev.com">ruebe@webdev.com</a><br>
+            <a href="tel:555-555-5554">555-555-5554</a><br>
+            <a href="mailto:ruebe@webdev.com">Contact Me</a><br>
+        </div> -->
+    
+        <form action="" method="POST" id="contact-form">
+        <div class="form__name">
+            <label class="standard-label" for="name">Your Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form__email">
+            <label class="standard-label" for="contact-email">Email:</label>
+            <input type="email" id="contact-email" required>
+        </div>
+        <div class="form__message">
+            <label class="standard-label" for="message">Message:</label>
+            <textarea style="font-weight: bolder; font-size: 1.5rem;" maxlength="240" id="message" required></textarea>
+        </div>
+        <div>
+            <input class="form__button" type="submit" value="Send Message" required>
+        </div>
+        </form>
+    
+        <section class="page-footer">
+            <div class="social-media2">
+            <a  href="https://github.com/Gutterstack"><img class="git" src="img/github.png" alt="Github"></a>
+            <a  href="https://www.linkedin.com/in/robert-uebelhor-a32506195/"><img class="link" src="img/linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <div>
+            <p class="built">Built by Robert Uebelhor 2020</p>
+        </div>
+        </section>
+        
+            
+    </footer>
+
+
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
