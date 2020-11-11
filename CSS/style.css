@@ -240,7 +240,7 @@ textarea {
     width: 600px;
     height: 300px;
     margin-right: 5.5rem;
-    background-color: rgba(255, 255, 255, 0.10);
+    background-color: rgba(255, 255, 255, 0.15);
     border: 2px solid white;
 }
 input:-webkit-autofill,
@@ -252,7 +252,7 @@ input:-webkit-autofill:active {
 }
 input[type="text"],
 [type="email"] {
-background-color: rgba(255, 255, 255, 0.10);
+background-color: rgba(255, 255, 255, 0.15);
 border: 2px solid white;
 width: 600px;
 height: 35px;
@@ -281,7 +281,7 @@ color: white;
 .form__button {
     width: 600px;
     padding: 12px 24px;
-    background-color: rgba(255, 255, 255, 0.10);
+    background-color: rgba(255, 255, 255, 0.15);
     border: 2px white solid;
     text-align: center;
     margin-bottom: 1rem;
