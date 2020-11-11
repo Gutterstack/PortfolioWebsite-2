@@ -229,6 +229,7 @@ margin-bottom: 4rem;
 
 form {
     text-align: center;
+    
 
 }
 label {
@@ -245,13 +246,13 @@ textarea {
 
 input[type="text"],
 [type="email"] {
-    background-color: rgba(255, 255, 255, 0.10);
-  border: 2px solid white;
-  width: 600px;
-  height: 35px;
-  font-weight: bolder;
-  font-size: 1rem;
-  color: white;
+background-color: rgba(255, 255, 255, 0.10);
+border: 2px solid white;
+width: 600px;
+height: 35px;
+font-weight: bolder;
+font-size: 1rem;
+color: white;
   /* margin-right: 1.45rem; */
 }
 .form__name {
