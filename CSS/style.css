@@ -5,8 +5,6 @@
 * Browsers: last 4 version
 */
 
-
-
 * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -71,8 +69,8 @@ body {
 }
 
 .top {
-    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(37, 29, 155, 0.7)), to(rgba(9, 110, 105, 0.7))), url("../img/pic2.jpg");
     background-image: -o-linear-gradient( rgba(37, 29, 155, 0.7), rgba(9, 110, 105, 0.7)), url("../img/pic2.jpg");
+    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(37, 29, 155, 0.7)), to(rgba(9, 110, 105, 0.7))), url("../img/pic2.jpg");
     background-image: linear-gradient( rgba(37, 29, 155, 0.7), rgba(9, 110, 105, 0.7)), url("../img/pic2.jpg");
     background-size: cover;
     background-position: center;
@@ -203,8 +201,8 @@ margin-bottom: 4rem;
 
 
 #contact {
-    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(189, 17, 132, 0.55)), to(rgba(9, 41, 110, 0.55))), url("../img/abstract-dark.jpg");
     background-image: -o-linear-gradient( rgba(189, 17, 132, 0.55), rgba(9, 41, 110, 0.55)), url("../img/abstract-dark.jpg");
+    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(189, 17, 132, 0.55)), to(rgba(9, 41, 110, 0.55))), url("../img/abstract-dark.jpg");
     background-image: linear-gradient( rgba(189, 17, 132, 0.55), rgba(9, 41, 110, 0.55)), url("../img/abstract-dark.jpg");
     
     background-size: cover;
@@ -241,17 +239,19 @@ textarea {
     width: 600px;
     height: 300px;
     margin-right: 5.5rem;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.10);
+    border: 2px solid white;
 }
 
 input[type="text"],
 [type="email"] {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.10);
   border: 2px solid white;
   width: 600px;
   height: 35px;
   font-weight: bolder;
   font-size: 1rem;
+  color: white;
   /* margin-right: 1.45rem; */
 }
 .form__name {
@@ -274,18 +274,23 @@ input[type="text"],
 .form__button {
     width: 600px;
     padding: 12px 24px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.10);
     border: 2px white solid;
     text-align: center;
     margin-bottom: 1rem;
     font-family: var(--main-font);
     font-size: 1.25rem;
     cursor: pointer;
+    color: white;
 }
-.form__button:hover {
+.form__button:hover,
+.form__button:focus {
     text-decoration: underline;
     background: transparent;
     color: white;
+}
+.form__button:active {
+    text-decoration: none;
 }
 
 
