@@ -234,13 +234,14 @@ form {
 label {
     color: white;
     font-family: var(--second-font);
+    font-size: 1.25rem;
 }
 textarea {
     width: 600px;
     height: 300px;
-    margin-right: 5.5rem;
+    margin-right: 6.7rem;
     background-color: rgba(255, 255, 255, 0.15);
-    border: 2px solid white;
+    border: 2.5px solid white;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -252,7 +253,7 @@ input:-webkit-autofill:active {
 input[type="text"],
 [type="email"] {
 background-color: rgba(255, 255, 255, 0.15);
-border: 2px solid white;
+border: 2.5px solid white;
 width: 600px;
 height: 35px;
 font-weight: bolder;
@@ -261,11 +262,11 @@ color: white;
   /* margin-right: 1.45rem; */
 }
 .form__name {
-    margin-right: 6.525rem;
+    margin-right: 7.925rem;
     
 }
 .form__email {
-    margin-right: 4rem;
+    margin-right: 4.6rem;
 }
 .form__message label {
     vertical-align: top;
@@ -281,13 +282,14 @@ color: white;
     width: 600px;
     padding: 12px 24px;
     background-color: rgba(255, 255, 255, 0.15);
-    border: 2px white solid;
+    border: 2.5px white solid;
     text-align: center;
     margin-bottom: 1rem;
     font-family: var(--main-font);
-    font-size: 1.25rem;
+    font-size: 2rem;
     cursor: pointer;
     color: white;
+
 }
 .form__button:hover,
 .form__button:focus {
@@ -306,13 +308,8 @@ color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: center;
+    gap: 8rem;
     margin-top: 10rem;
     padding-bottom: 2rem;
 }
@@ -332,6 +329,7 @@ color: white;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+            gap: 2rem;
     margin-top: 5rem;
     padding-bottom: 2rem;
 }
