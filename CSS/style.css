@@ -255,9 +255,9 @@ input[type="text"],
 background-color: rgba(255, 255, 255, 0.15);
 border: 2.5px solid white;
 width: 600px;
-height: 35px;
+height: 45px;
 font-weight: bolder;
-font-size: 1rem;
+font-size: 1.25rem;
 color: white;
   /* margin-right: 1.45rem; */
 }
@@ -313,6 +313,7 @@ color: white;
     margin-top: 10rem;
     padding-bottom: 2rem;
 }
+
 .social-media img {
     width: 90px;
     height: 90px;
@@ -338,18 +339,16 @@ color: white;
     color: white;
     text-align: center;
     margin: 0;
-    padding-top: 2rem;
     font-size: smaller;
     padding-bottom: 4px;
     font-family: var(--second-font);
 }
 
-/* start grid fallback */
 .grid__item {
     display: inline-block;
     width: 33%;
 }
-   /* end grid fallback */
+
 
 @supports (display: grid) {
     .grid {
