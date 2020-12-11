@@ -187,6 +187,11 @@ margin-bottom: 4rem;
     padding-top: 3rem;
 }
 
+.grid__item {
+    display: inline-block;
+    width: 33%;
+}
+
 .grid__item--title {
     font-family: var(--main-font);
     font-size: 2rem;
@@ -344,10 +349,7 @@ color: white;
     font-family: var(--second-font);
 }
 
-.grid__item {
-    display: inline-block;
-    width: 33%;
-}
+
 
 
 @supports (display: grid) {
@@ -358,10 +360,10 @@ color: white;
     -ms-grid-columns: 1fr 25px 1fr 25px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 25px;
+    padding: 0 6rem;
     margin: 0;
     }
     .grid__item {
-    @extend %web-shared;
     width: auto;
     min-height: auto;
     text-align: center;
