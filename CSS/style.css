@@ -202,9 +202,7 @@ margin-bottom: 4rem;
     font-size: 1.25rem;
 }
 
-.grid__item--img img :hover {
-    background: linear-gradient(rgba(111,111,111,0.5));
-}
+
 
 
 #contact {
