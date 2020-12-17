@@ -141,6 +141,7 @@ margin-bottom: 4rem;
     font-family: var(--second-font) ;
     width: 50%;
     font-size: 2rem;
+    text-align: left;
     
 }
 .portrait {
