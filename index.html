@@ -40,8 +40,8 @@
         <p class="profile__name">Robert Uebelhor</p>
         <p class="profile__dev">Web Developer in Greater Nashville Area</p>
         <div class="social-media">
-            <a  href="https://github.com/Gutterstack"><img class="git" src="img/github.png" alt="Github"></a>
-            <a  href="https://www.linkedin.com/in/robert-uebelhor-a32506195/"><img class="link" src="img/linkedin.png" alt="LinkedIn"></a>
+            <a  href="https://github.com/Gutterstack"><img class="social-media__icon" src="img/github.png" alt="Github"></a>
+            <a  href="https://www.linkedin.com/in/robert-uebelhor-a32506195/"><img class="social-media__icon" src="img/linkedin.png" alt="LinkedIn"></a>
         </div>
 
     </div>
@@ -64,28 +64,37 @@
 <section id="work">
     <h1 class="work__title">My Work</h1>
             <div class="grid">
-
                 <div class="grid__item">
                     <h2 class="grid__item--title">Personal Site</h2>
                     <div class="grid__item--img">
-                        <a href="https://github.com/Gutterstack/PortfolioWebsite-2"><img  src="img/personal.png" alt="proffesional-site" width="768" height="432"></a>
+                        <a href="https://github.com/Gutterstack/PortfolioWebsite-2" target="_blank">
+                            <img src="img/personal_ss.png" alt="proffesional-site" >
+                        </a>
                     </div>
+
                     <p class="grid__item--descr">
                         My own personal website.<br>
                         (HTML and CSS)
                     </p>
                 </div>
 
+
                 <div class="grid__item">
                     <h2 class="grid__item--title">Colombia</h2>
-                    <a href="https://github.com/Gutterstack/Colombia"><img src="img/colo.png" alt="Colombia-site" width="768" height="432"></a>
-                    <p class="grid__item--descr">
-                        Expat service for individuals moving to Colombia. <br>
-                        (HTML and CSS)<br>
-                    </p>
+                    <div class="grid__item--img">
+                        <a href="https://github.com/Gutterstack/Colombia" target="_blank">
+                            <img src="img/colo.png" alt="Colombia-site" >   
+                        </a>
+                            <div>
+                                <p class="grid__item--descr">
+                                    Expat service for individuals moving to Colombia. <br>
+                                    (HTML and CSS)<br>
+                                </p>
+                            </div>
+                            
+                    </div>
+
                 </div>
-                
-             
 
 
 
@@ -118,9 +127,9 @@
                         
                     </p>
                     <a href="#">See project on Github</a>
-                </div> -->
+                </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <footer id="contact">
@@ -138,15 +147,15 @@
         <form action="" method="POST" id="contact-form">
         <div class="form__name">
             <label class="standard-label" for="name">Your Name:</label>
-            <input  style="font-family: 'Trispace', sans-serif;" type="text" id="name" required>
+            <input  style="font-family: 'Trispace', sans-serif;" type="text" id="name" required placeholder="Your Name">
         </div>
         <div class="form__email">
             <label class="standard-label" for="contact-email">Email:</label>
-            <input style="font-family: 'Trispace', sans-serif;" type="email" id="contact-email" required>
+            <input style="font-family: 'Trispace', sans-serif;" type="email" id="contact-email" required placeholder="Your Email">
         </div>
         <div class="form__message">
             <label class="standard-label" for="message">Message:</label>
-            <textarea style="font-weight: bolder; font-size: 1.25rem; color: white; resize:none; font-family: 'Trispace', sans-serif;" maxlength="240" id="message" required></textarea>
+            <textarea style="font-weight: bolder; font-size: 1.25rem; color: white; resize:none; font-family: 'Trispace', sans-serif;" maxlength="240" id="message" required placeholder="Type your message here..."></textarea>
         </div>
         <div>
             <a href="sentmsg.html"><input class="form__button" type="submit" value="Send Message"></a>
