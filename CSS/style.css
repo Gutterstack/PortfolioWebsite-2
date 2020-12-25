@@ -475,15 +475,7 @@ and (orientation: portrait) {
     .top {
         min-height: 800px;
     }
-    /* .page-header img {
-         width: 200px;
-        height: auto;
-    } */
-    /* .page-header__item {
-        width: 100px;
-        height: auto;
-    }
-     */
+    
     .page-header__item {
         flex: .25 1 100px;
     }
@@ -894,7 +886,8 @@ and (orientation: portrait) {
 }
 @media only screen and (max-width: 600px) {
     .top {
-        min-height: 600px;
+       
+        min-height: 800px;
     }
     .page-header__item {
         width: 100px;
@@ -996,7 +989,7 @@ and (orientation: portrait) {
 @media only screen and (max-width: 400px) {
    
     .top {
-        min-height: 400px;
+        min-height: 600px;
     }
     .page-header__item {
         width: 120px;
@@ -1098,7 +1091,7 @@ color: white;
 
 @media only screen and (max-width: 359px) {
     .top {
-        min-height: 400px;
+        min-height: 600px;
     }
     .page-header {
         padding-right: 1rem;
@@ -1208,663 +1201,127 @@ color: white;
     height: 52px;
 }
 }
-
-
-
-
-
-/* @media all and (max-width: 1024px) {
-    .page-header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding-right: 0rem;
+@media only screen and (max-width: 255px) {
+    .top {
+        min-height: 500px;
     }
-    
+    .page-header {
+        padding-right: 1rem;
+    }
+    .page-header__item {
+        flex: 0 .875 200px;
+        height: 112px;
+    }
+    .navigation-list__item {
+        font-size: 1rem;
+    }
     .navigation-list {
-        margin-right: 1rem;
+        margin-right: 0rem;
     }
     .navigation-list li {
-        margin: .75rem .25rem;
-        font-size: 1.35rem;
+        margin: .15rem .15rem;
     }
     .profile__name {
-        font-size: 2.25rem;
+        font-size: 1.5rem;
         padding-top: 3rem;
     }
     .profile__dev {
-        font-size: 1.35rem;
+        font-size: .85rem;
     }
     .social-media {
-        gap: 3rem;
-        margin-top: 5rem;
+        gap: 2rem;
+        margin-top: 4rem;
+        
     }
-    .social-media img {
-        max-width: 100%;
-    }
+    .social-media__icon {
+        width: 52px;
+        height: auto;
+    } 
     .about__title {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     .about__descr {
-        font-size: 1.1rem;
+        font-size: .90rem;
         width: 70%;
     }
     .work__title {
-        font-size: 2.5rem;
-    }
-    .grid__item--title {
         font-size: 1.5rem;
-    }
-    .contact__title {
-        font-size: 2.5rem;
-    }
-    .grid__item--descr {
-        font-size: 1rem;
-    }
-    label {
-        color: white;
-        font-family: var(--second-font);
-        font-size: 1rem;
-        display: block;
-        margin-bottom: .5rem;
-    }
-    textarea {
-        width: 300px;
-        height: 200px;
-        background-color: rgba(255, 255, 255, 0.15);
-        border: 2.5px solid white;
-        font-size: .90rem!important;
-        margin-right: 0;
-    }
-input[type="text"],
-[type="email"] {
-background-color: rgba(255, 255, 255, 0.15);
-border: 2.5px solid white;
-width: 300px;
-height: 35px;
-font-weight: bolder;
-font-size: 1rem;
-color: white;
-}
-.form__name label,
-    .form__email label,
-    .form__message label {
-        display: none;
-    }
-    ::placeholder {
-        color: rgba(255, 255, 255, 0.664);
-        opacity: 1;
-    }
-.form__name {
-    margin-right: 0;
-}
-.form__email {
-    margin-right: 0;
-}
-.form__button {
-    width: 300px;
-    font-size: 1.15rem;
-    padding: 6px 24px;
-}
-} */
-
-
-/* @media all and (min-width: 280px) and (max-width:320px) and (max-height: 653px) {
-    .page-header__item {
-        width: 120px;
-        height: auto;
-    }
-    .profile__name {
-        font-size: 1.85rem;
-    }
-    .profile__dev {
-        font-size: 1.25rem;
-    }
-    .grid {
-        display: grid;
-        column-gap: 1.75rem;
-        row-gap: 1.75rem;
-        grid-template-areas: "griditem1"
-                            "griditem2";
-        justify-items: center;                
-    }
-    .grid__item--descr {
-        font-size: 1rem;
-        margin-bottom: 3rem;
-    }
-    .form__name label,
-    .form__email label,
-    .form__message label {
-        display: none;
-    }
-    ::placeholder {
-        color: rgba(255, 255, 255, 0.664);
-        opacity: 1;
-    }
-}
-
-@media all and (min-width: 321px) and (max-width: 420px) and (min-height: 654px) and (max-height: 849px) {
-    .grid {
-        display: grid;
-        column-gap: 1.75rem;
-        row-gap: 1.75rem;
-        grid-template-areas: "griditem1"
-                            "griditem2";
-        justify-items: center;                
-    }
-    .grid__item--title {
-        font-size: 1.75rem;
-    }
-    .grid__item--descr {
-        font-size: 1.25rem;
-        margin-bottom: 4rem;
-    
-    }
-}
-
-@media all and (max-width: 390px) and (max-height: 653px) {
-    .page-header__item{
-        width: 120px;
-        height: auto;
-    }
-    .grid {
-        display: grid;
-        column-gap: 1.75rem;
-        row-gap: 1.75rem;
-        grid-template-areas: "griditem1"
-                            "griditem2";
-        justify-items: center;                
-    }
-    .grid__item--descr {
-        font-size: .895rem;
-        margin-bottom: 3rem;
-    }
-    textarea {
-        width: 250px;
-        height: 200px;
-        background-color: rgba(255, 255, 255, 0.15);
-        border: 2.5px solid white;
-        font-size: .90rem!important;
-        margin-right: 0;
-    }
-input[type="text"],
-[type="email"] {
-background-color: rgba(255, 255, 255, 0.15);
-border: 2.5px solid white;
-width: 250px;
-height: 35px;
-font-weight: bolder;
-font-size: 1rem;
-color: white;
-}
-.form__name label,
-    .form__email label,
-    .form__message label {
-        display: none;
-    }
-    ::placeholder {
-        color: rgba(255, 255, 255, 0.664);
-        opacity: 1;
-    }
-.form__name {
-    margin-right: 0;
-}
-.form__email {
-    margin-right: 0;
-}
-.form__button {
-    width: 250px;
-    font-size: 1.15rem;
-    padding: 6px 24px;
-}
-.social-media img {
-    width: 62px;
-    height: 62px;
-}
-.social-media2 img {
-    width:52px;
-    height: 52px;
-}
-}
-
-
-@media all and (min-width: 410px) and (max-width:599px) and (min-height: 850px) and (max-height:949) {
-    .navigation-list li {
-        font-size: 1.5rem;
-    }
-    .profile__name {
-        font-size: 3rem;
-    }
-    .profile__dev {
-        margin-bottom: 6rem;
-    }
-    .grid {
-        display: grid;
-        column-gap: 1.75rem;
-        row-gap: 1.75rem;
-        grid-template-areas: "griditem1"
-                            "griditem2";
-        justify-items: center;                
-    }
-    .grid__item--descr {
-        font-size: .895rem;
-        margin-bottom: 3rem;
-    }
-} */
-
-
-
-/* @media screen and (orientation:landscape)
-and (min-device-width: 1280px) 
-and (max-device-width: 1400px) {
-    .form__message {
-        margin-right: 6.5rem;
-    }
-    .form__button {
-        margin-left: .5rem;
-    }
-} */
-
-
-
-
-/* 
-@media all and (min-width: 600px) and (max-width:799px) and (min-height: 950px) and (max-height:1024px) {
-    .navigation-list li {
-        font-size: 1.75rem;
-    }
-    .profile__name {
-        font-size: 3rem;
-        margin-top: 7rem;
-    }
-    .about__descr {
-        font-size: 1.25rem;
-    }
-    textarea {
-        width: 400px;
-        height: 300px;
-        background-color: rgba(255, 255, 255, 0.15);
-        border: 2.5px solid white;
-        font-size: 1rem!important;
-        margin-right: 0;
-    }
-input[type="text"],
-[type="email"] {
-background-color: rgba(255, 255, 255, 0.15);
-border: 2.5px solid white;
-width: 400px;
-height: 35px;
-font-weight: bolder;
-font-size: 1rem;
-color: white;
-}
-.form__button {
-    width: 400px;
-    font-size: 1.15rem;
-    padding: 6px 24px;
-}
-}
-
-@media all and (min-width: 800px) and (max-width: 950px) and (min-height: 1024px) and (max-height: 1440px) {
-    .navigation-list li {
-        font-size: 2rem;
-    }
-    .profile__name {
-        font-size: 3.25rem;
-        margin-top: 12rem;
-    }
-    .profile__dev {
-        font-size: 1.75rem;
-    }
-    .about__descr {
-        font-size: 1.35rem;
-    }
-    textarea {
-        width: 500px;
-        height: 300px;
-        background-color: rgba(255, 255, 255, 0.15);
-        border: 2.5px solid white;
-        font-size: 1rem!important;
-        margin-right: 0;
-    }
-input[type="text"],
-[type="email"] {
-background-color: rgba(255, 255, 255, 0.15);
-border: 2.5px solid white;
-width: 500px;
-height: 45px;
-font-weight: bolder;
-font-size: 1rem;
-color: white;
-}
-.form__button {
-    width: 500px;
-    font-size: 1.15rem;
-    padding: 10px 24px;
-}
-}
-
-@media all and (min-width: 950px) and (max-width: 1024px) and (min-height: 1280px) and (max-height:1366px) {
-    .navigation-list li {
-        font-size: 2rem;
-    }
-    .profile__name {
-        font-size: 3.25rem;
-        margin-top: 20rem;
-    }
-    .profile__dev {
-        font-size: 1.85rem;
-    }
-    .about__descr {
-        font-size: 1.55rem;
-    }
-    textarea {
-        width: 500px;
-        height: 300px;
-        background-color: rgba(255, 255, 255, 0.15);
-        border: 2.5px solid white;
-        font-size: 1rem!important;
-        margin-right: 0;
-    }
-input[type="text"],
-[type="email"] {
-background-color: rgba(255, 255, 255, 0.15);
-border: 2.5px solid white;
-width: 500px;
-height: 45px;
-font-weight: bolder;
-font-size: 1rem;
-color: white;
-}
-.form__button {
-    width: 500px;
-    font-size: 1.15rem;
-    padding: 10px 24px;
-}
-}
-
-
-
-@media screen and (orientation:landscape)
-and (min-device-width: 500px) 
-and (max-device-width: 699px) {  
-    .page-header__item {
-        flex: none!important;
-    }
-    .page-header__item {
-      /* width: 100px!important; */
-    /* height: 100px;
-    }
-    .navigation-list {
-        display: flex;
-        justify-content: right;
-    }
-    .navigation-list li {
-        margin: .75rem 1rem;
-        font-size: 1rem;
-        white-space: nowrap;
-    }
-    
-    .profile__name {
-        margin-top: 0;
-        padding-top: 0;
-        font-size: 1.75rem;
-    }
-    .profile__dev {
-        font-size: 1rem;
-    }
-
-    .social-media {
-        margin-top: 0rem;
-    }
-    .social-media img {
-        margin-top: .5rem;
-        width: 46px;
-        height: 46px;
-    }
-    #about {
-        padding-bottom: 3rem;
-    }
-    .about__title {
-        padding-top: 1.25rem;
-        font-size: 1.75rem;
-    }
-    .about__descr {
-        font-size: 1rem;
-        margin-top: 0;
-        
-    }
-    .about__flex {
-        margin-bottom: 1rem;
     }
     #about .button {
         font-size: .75rem;
-        margin-top: .15rem;
     }
-    .work__title {
-        font-size: 1.75rem;
+    .grid {
+        display: grid;
+        column-gap: 1.75rem;
+        row-gap: 1.75rem;
+        grid-template-areas: "griditem1"
+                            "griditem2";
+        justify-items: center;                
     }
-    .contact__title {
-        font-size: 1.75rem;
-    }
-    .contact__title2 {
+    .grid__item--title {
         font-size: 1.25rem;
     }
-    .form__name label,
+    .grid__item--descr {
+        font-size: .80rem;
+        margin-bottom: 3rem;
+    }
+    .contact__title {
+        font-size: 1.5rem;
+    }
+    .contact__title2 {
+        font-size: .90rem;
+    }
+    textarea {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(255, 255, 255, 0.15);
+        border: 2.5px solid white;
+        font-size: .90rem!important;
+        margin-right: 0;
+    }
+input[type="text"],
+[type="email"] {
+background-color: rgba(255, 255, 255, 0.15);
+border: 2.5px solid white;
+width: 200px;
+height: 35px;
+font-weight: bolder;
+font-size: 1rem;
+color: white;
+}
+.form__name label,
     .form__email label,
     .form__message label {
         display: none;
-    }
-    input[type="text"],
-    [type="email"] {
-        width: 375px;
-    }
-    textarea {
-        width: 375px;
     }
     ::placeholder {
         color: rgba(255, 255, 255, 0.664);
         opacity: 1;
     }
-    .form__button {
-        width: 375px;
-    }
+.form__name {
+    margin-right: 0;
+}
+.form__email {
+    margin-right: 0;
+}
+.form__button {
+    width: 200px;
+    font-size: 1.15rem;
+    padding: 6px 24px;
+}
+.social-media2 {
+    gap: 2rem;
+}
+.social-media2 img {
+    width:46px;
+    height: 46px;
+}
+.built {
+    font-size: .65rem;
+}
 }
 
-@media screen and (orientation:landscape)
-and (min-device-width: 700px) 
-and (max-device-width: 899px) {
-    .page-header__item {
-        flex: none!important;
-    }
-    .page-header__item {
-    
-        height: 120px;
-    }
-    .navigation-list {
-        display: flex;
-        justify-content: right;
-    }
-    .navigation-list li {
-        margin: .75rem 1rem;
-        font-size: 1.25rem;
-        white-space: nowrap;
-    }
-    
-    .profile__name {
-        margin-top: 0;
-        padding-top: 0;
-        font-size: 2rem;
-    }
-    .profile__dev {
-        font-size: 1.25rem;
-    }
 
-    .social-media {
-        margin-top: 0rem;
-    }
-    .social-media img {
-        margin-top: .5rem;
-        width: 52px;
-        height: 52px;
-    }
-    #about {
-        padding-bottom: 4rem;
-    }
-    .about__title {
-        padding-top: 1.5rem;
-        font-size: 2rem;
-    }
-    .about__descr {
-        font-size: 1.25rem;
-        margin-top: 0;
-        
-    }
-    .about__flex {
-        margin-bottom: 1.25rem;
-    }
-    #about .button {
-        font-size: 1rem;
-    }
-    .work__title {
-        font-size: 2rem;
-    }
-    .contact__title {
-        font-size: 2rem;
-    }
-    .contact__title2 {
-        font-size: 1.5rem;
-    }
-    .form__name label,
-    .form__email label,
-    .form__message label {
-        display: none;
-    }
-    input[type="text"],
-    [type="email"] {
-        width: 475px;
-    }
-    textarea {
-        width: 475px;
-    }
-    ::placeholder {
-        color: rgba(255, 255, 255, 0.664);
-        opacity: 1;
-    }
-    .form__button {
-        width: 475px;
-    }
-}
-@media screen and (orientation:landscape)
-and (min-device-width: 900px) 
-and (max-device-width: 1099px) {
-    
-    .navigation-list li {
-        margin: .75rem 1rem;
-        font-size: 1.5rem;
-        white-space: nowrap;
-    }
-    
-    .profile__name {
-        margin-top: 3rem;
-        padding-top: 0;
-        font-size: 2.75rem;
-    }
-    .profile__dev {
-        font-size: 1.5rem;
-    }
 
-    .social-media {
-        margin-top: 0rem;
-    }
-    .social-media img {
-        margin-top: .5rem;
-        width: 76px;
-        height: 76px;
-    }
-    #about {
-        padding-bottom: 6rem;
-    }
-    .about__title {
-        padding-top: 2rem;
-        font-size: 2rem;
-    }
-    .about__descr {
-        font-size: 1.5rem;
-        margin-top: 0;
-        
-    }
-    .about__flex {
-        margin-bottom: 1.25rem;
-    }
-    #about .button {
-        font-size: 1.25rem;
-    }
-    .work__title {
-        font-size: 2rem;
-    }
-    .contact__title {
-        font-size: 2rem;
-    }
-    .contact__title2 {
-        font-size: 1.5rem;
-    }
-    .form__name label,
-    .form__email label,
-    .form__message label {
-        display: none;
-    }
-    input[type="text"],
-    [type="email"] {
-        width: 500px;
-    }
-    textarea {
-        width: 500px;
-        height: 300px;
-    }
-    ::placeholder {
-        color: rgba(255, 255, 255, 0.664);
-        opacity: 1;
-    }
-    .form__button {
-        width: 500px;
-    }
-}
 
-@media all and (min-width:1280px) and (max-width:1300px) and (min-height:950px)
-and (orientation:landscape) {
-textarea {
-        margin-right:6.75rem;
-    }
-} 
-@media all 
-    and (min-width: 1366px)
-    and (max-width: 1366px)
-    and (min-height: 768px)
-    and (max-height: 768px) {
-        .profile__name {
-            padding-top: 3rem;
-            font-size: 2.75rem;
-        }
-        .profile__dev {
-            font-size: 1.75rem;
-        }
-       
-        .social-media {
-            margin-top: 0rem;
-        }
-        .social-media img {
-            margin-top: .5rem;
-            width: 84px;
-            height: 84px;
-        }
-    }  */
-/* @media only screen   
-and (min-width: 1030px)   
-and (max-width: 1366px)  {
-    .form__message {
-        margin-right: 0rem;
-    }
-    .form__button {
-        margin-left: 0rem;
-    }
-} */
+
