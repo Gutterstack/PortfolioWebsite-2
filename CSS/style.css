@@ -95,21 +95,20 @@ html, body {
     font-family: 'Trispace', sans-serif;
 }
 .social-media {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 8rem;
+    
     margin-top: 10rem;
     padding-bottom: 2rem;
+    padding-inline-start: 0%;
+}
+.social-media li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 6%;
 }
 
 .social-media img {
     width: 90px;
     height: 90px;
-   
 }
 .aboutbtn {
     margin-top: 5.5rem;
@@ -1202,8 +1201,11 @@ and (orientation: portrait) {
         gap: 3rem;
         margin-top: 5rem;
     }
+    
+
     .social-media img {
-        max-width: 100%;
+        width: 90px;
+        height: 90px;
     }
     .about__title {
         font-size: 2.5rem;
