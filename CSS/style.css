@@ -95,7 +95,6 @@ html, body {
     font-family: 'Trispace', sans-serif;
 }
 .social-media {
-    
     margin-top: 10rem;
     padding-bottom: 2rem;
     padding-inline-start: 0%;
@@ -361,23 +360,21 @@ color: white;
     text-decoration: none;
 }
 
-
+.page-footer {
+    text-align: center;
+}
 
 .social-media2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-            gap: 2rem;
+    padding-inline-start: 0;
     margin-top: 5rem;
     padding-bottom: 2rem;
 }
+.social-media2 li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 2.5%;
+}
+
 
 .built {
     color: white;
