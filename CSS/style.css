@@ -381,6 +381,44 @@ color: white;
     margin: 0 2.5%;
 }
 
+.top_link_position {
+    display: block;
+	position: fixed;
+    bottom: 0%;
+    right: 0%;
+    z-index: 600;
+}
+
+.top_btn {
+	border: 1.5px solid white;
+	background: rgb(39, 38, 38);
+	padding: 1rem 1rem;
+	color: white;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+.top_btn:hover {
+    background: linear-gradient(rgba(167,167,167,.97), rgba(167,167,167,.97));
+    transition: all 0.25s ease-in-out;
+	cursor: pointer;
+	color: black;
+}
+
+
+
+/* .back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+} */
+
+
 
 .built {
     color: white;

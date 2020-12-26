@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="page_top">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Robert Uebelhor</title>
     <link rel="shortcut icon" href="img/favivcon.png" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="normalizer">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Trispace&display=swap" rel="stylesheet"> 
     <link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="normalize">
@@ -25,7 +26,7 @@
                     <a href="#about" role="menuitem" class="navigation-list__item">About</a>
                 </li>
                 <li role="presentation">
-                    <a href="#work" role="menuitem" class="navigation-list__item">My Work</a>
+                    <a href="#work" role="menuitem" class="navigation-list__item" >My Work</a>
                 </li>
                 <li role="presentation">
                     <a href="#contact" role="menuitem" class="navigation-list__item">Contact</a>
@@ -39,12 +40,12 @@
         <p class="profile__dev">Web Developer in Greater Nashville Area</p>
         <ul class="social-media">
             <li>
-                <a  href="https://github.com/Gutterstack">
+                <a title="Github"  href="https://github.com/Gutterstack">
                 <img class="social-media__icon" src="img/github.png" alt="Github">
             </a>
             </li>
             <li>
-                <a  href="https://www.linkedin.com/in/robert-uebelhor-a32506195/">
+                <a title="LinkedIn"  href="https://www.linkedin.com/in/robert-uebelhor-a32506195/">
                 <img class="social-media__icon" src="img/linkedin.png" alt="LinkedIn">
             </a>
             </li>
@@ -155,18 +156,26 @@
         <section class="page-footer">
             <ul class="social-media2">
                 <li>
-                    <a  href="https://github.com/Gutterstack">
+                    <a title="Github" href="https://github.com/Gutterstack">
                     <img class="git" src="img/github.png" alt="Github">
                     </a>
                 </li>
                 <li>
-                    <a  href="https://www.linkedin.com/in/robert-uebelhor-a32506195/">
+                    <a title="LinkedIn" href="https://www.linkedin.com/in/robert-uebelhor-a32506195/">
                     <img class="link" src="img/linkedin.png" alt="LinkedIn">
                     </a>
                 </li>
-                
             </ul>
-                <div>
+            
+            <div class="top_link_position">
+                <a class="back-to-top" href="#page_top" title="Top"
+                ><button class="top_btn"><span class="icon"><i class="fas fa-chevron-up fa-2x"></i></span></button>
+                </a>
+                
+            </div>
+           
+
+            <div>
                 <p class="built">Built by Robert Uebelhor 2020</p>
             </div>
         </section>
@@ -176,6 +185,9 @@
 
 
     <!-- <script src="js/tota11y.min.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
 </body>
 
 </html>
