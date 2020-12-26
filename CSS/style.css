@@ -27,6 +27,12 @@ body {
 html, body {
     height: 100%;
 }
+html,body {
+	text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+}
 .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -295,7 +301,7 @@ textarea {
     opacity: 0;
 }
 :-ms-input-placeholder {
-    opacity: 0;
+    opacity: 1;
 }
 ::-ms-input-placeholder {
     opacity: 0;
@@ -653,6 +659,7 @@ and (orientation: portrait) {
 @media only screen and (max-width: 1023px) {
     .top {
         min-height: 800px;
+        
     }
     .page-header__item {
         width: 100px;
