@@ -390,9 +390,18 @@ color: white;
     padding-bottom: 4px;
     font-family: var(--second-font);
 }
+@media only screen 
+and (min-device-width: 1366px)
+and (max-device-width: 1366px)
+and (orientation: landscape) {
+    .top {
+        background-attachment: unset;
+    }
+}
 @media only screen and (max-width: 1200px) {
     .top {
         min-height: 800px;
+        background-attachment: unset;
     }
     .page-header__item {
         width: 100px;
