@@ -96,6 +96,7 @@ html,body {
 }
 .profile__name {
     padding-top: 12rem;
+    
     font-size: 3rem;
     font-family: 'Quicksand', sans-serif;
 }
@@ -476,6 +477,7 @@ and (orientation: landscape) {
     .profile__name {
         font-size: 4rem;
         padding-top: 4rem;
+        
     }
     .profile__dev {
         font-size: 1.75rem;
@@ -1273,7 +1275,8 @@ and (orientation: portrait) {
     }
     .profile__name {
         font-size: 1.85rem;
-        padding-top: 7rem;
+        padding-top: 35%;
+        
     }
     .profile__dev {
         font-size: 1.25rem;
