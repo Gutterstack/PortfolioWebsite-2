@@ -77,17 +77,21 @@ html,body {
     text-decoration: underline; 
 }
 
-.top {
+#top {
     background-image: -o-linear-gradient( rgba(8, 8, 37, 0.8), rgba(0, 15, 80, 0.625)), url("../img/pic2.jpg");
     background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(8, 8, 37, 0.8)), to(rgba(0, 15, 80, 0.625))), url("../img/pic2.jpg");
     background-image: linear-gradient( rgba(8, 8, 37, 0.8), rgba(0, 15, 80, 0.625)), url("../img/pic2.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
+    position: relative;
     min-height: 900px;
     width: 100%;
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    background-attachment: fixed;
+    height: 100%;
+    /* height: 100vh;
+    height: calc(var(--vh, 1vh) * 100); */
+    
     
 }
 .profile {
@@ -454,12 +458,12 @@ color: white;
 and (min-device-width: 1366px)
 and (max-device-width: 1366px)
 and (orientation: landscape) {
-    .top {
+    #top {
         background-attachment: unset;
     }
 }
 @media only screen and (max-width: 1200px) {
-    .top {
+    #top {
         min-height: 800px;
         background-attachment: unset;
     }
@@ -595,7 +599,7 @@ and (orientation: landscape) {
 and (min-device-width: 1024px)
 and (max-device-width: 1024px)
 and (orientation: portrait) {
-    .top {
+    #top {
         min-height: 800px;
     }
     
@@ -736,7 +740,7 @@ and (orientation: portrait) {
 }
 
 @media only screen and (max-width: 1023px) {
-    .top {
+    #top {
         min-height: 800px;
         
     }
@@ -867,7 +871,7 @@ and (orientation: portrait) {
     }
 }
 @media only screen and (max-width: 800px) {
-    .top {
+    #top {
         min-height: 800px;
     }
     .page-header__item {
@@ -997,7 +1001,7 @@ and (orientation: portrait) {
     }
 }
 @media only screen and (max-width: 700px) {
-    .top {
+    #top {
         min-height: 800px;
     }
     .page-header__item {
@@ -1127,7 +1131,7 @@ and (orientation: portrait) {
     }
 }
 @media only screen and (max-width: 600px) {
-    .top {
+    #top {
        
         min-height: 600px;
     }
@@ -1257,7 +1261,7 @@ and (orientation: portrait) {
 
 @media only screen and (max-width: 400px) {
    
-    .top {
+    #top {
         min-height: 600px;
     }
     .page-header__item {
@@ -1390,7 +1394,7 @@ color: white;
 }
 
 @media only screen and (max-width: 359px) {
-    .top {
+    #top {
         min-height: 600px;
     }
     .page-header {
@@ -1529,7 +1533,7 @@ color: white;
     }
 }
 @media only screen and (max-width: 255px) {
-    .top {
+    #top {
         min-height: 500px;
     }
     .page-header {
