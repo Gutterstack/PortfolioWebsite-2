@@ -397,11 +397,29 @@ color: white;
 	font-weight: bolder;
 	text-transform: uppercase;
 }
-.top_btn:hover {
+.top_btn:hover,
+.top_btn:focus {
     background: linear-gradient(rgba(167,167,167,.97), rgba(167,167,167,.97));
     transition: all 0.25s ease-in-out;
 	cursor: pointer;
 	color: black;
+}
+.top_btn:active {
+    border: 1.5px solid white;
+	background: rgb(39, 38, 38);
+	padding: 1rem 1rem;
+	color: white;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+.top_btn:hover,
+.top_btn:focus,
+.top_btn:active {
+    outline: 0;
+}
+.top_btn:visited {
+    background: rgb(39, 38, 38);
+    color: white;
 }
 
 
@@ -418,8 +436,6 @@ color: white;
     display: none;
 } */
 
-
-
 .built {
     color: white;
     text-align: center;
@@ -428,6 +444,8 @@ color: white;
     padding-bottom: 4px;
     font-family: var(--second-font);
 }
+
+
 @media only screen 
 and (min-device-width: 1366px)
 and (max-device-width: 1366px)
@@ -567,6 +585,7 @@ and (orientation: landscape) {
         -ms-grid-column: 1;                
     }
 }
+
 @media only screen 
 and (min-device-width: 1024px)
 and (max-device-width: 1024px)
@@ -700,6 +719,14 @@ and (orientation: portrait) {
     .grid__item2 {
         -ms-grid-row: 3;
         -ms-grid-column: 1;                
+    }
+}
+
+@media(hover: none) and (pointer: coarse) {
+    .top_btn:hover {
+        background: rgb(39, 38, 38);
+        color: white;
+        
     }
 }
 
@@ -1643,6 +1670,7 @@ color: white;
         -ms-grid-column: 1;                
     }
 }
+
 
 
 
