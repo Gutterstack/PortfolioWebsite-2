@@ -1129,7 +1129,7 @@ and (orientation: portrait) {
 @media only screen and (max-width: 600px) {
     .top {
        
-        min-height: 800px;
+        min-height: 600px;
     }
     .page-header__item {
         width: 100px;
