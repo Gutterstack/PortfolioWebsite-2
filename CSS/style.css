@@ -404,14 +404,7 @@ color: white;
 	cursor: pointer;
 	color: black;
 }
-.top_btn:active {
-    border: 1.5px solid white;
-	background: rgb(39, 38, 38);
-	padding: 1rem 1rem;
-	color: white;
-	font-weight: bolder;
-	text-transform: uppercase;
-}
+
 .top_btn:hover,
 .top_btn:focus,
 .top_btn:active {
@@ -422,7 +415,14 @@ color: white;
     color: white;
 }
 
-
+.top_btn:active {
+    border: 1.5px solid white;
+	background: rgb(39, 38, 38);
+	padding: 1rem 1rem;
+	color: white;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
 
 /* .back-to-top {
     position: fixed;
