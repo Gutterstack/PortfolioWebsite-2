@@ -1134,8 +1134,11 @@ and (orientation: portrait) {
 @media only screen and (max-width: 600px) {
     #top {
        
-        min-height: 600px;
+        min-height: auto; /* change by amit */
     }
+	.page-header{
+		padding:0 0.6rem;  /* change by amit */
+	}
     .page-header__item {
         width: 100px;
         height: auto;
@@ -1263,7 +1266,7 @@ and (orientation: portrait) {
 @media only screen and (max-width: 400px) {
    
     #top {
-        min-height: 600px;
+        min-height: auto;  /* change by amit */
     }
     .page-header__item {
         width: 120px;
@@ -1396,10 +1399,7 @@ color: white;
 
 @media only screen and (max-width: 359px) {
     #top {
-        min-height: 600px;
-    }
-    .page-header {
-        padding-right: 1rem;
+        min-height: auto;  /* change by amit */
     }
     .page-header__item {
         width: 100px;
@@ -1535,10 +1535,7 @@ color: white;
 }
 @media only screen and (max-width: 255px) {
     #top {
-        min-height: 500px;
-    }
-    .page-header {
-        padding-right: 1rem;
+        min-height: auto;  /* change by amit */
     }
     .page-header__item {
         -webkit-box-flex: 0;
