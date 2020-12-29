@@ -1140,8 +1140,8 @@ and (orientation: portrait) {
 		padding:0 0.6rem;   change by amit 
 	} */
     .page-header__item {
-        width: 100px;
-        height: auto;
+        flex: 0 1 200px;
+        height: 100%;
     }
     .navigation-list {
         margin-right: .75rem;
