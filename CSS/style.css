@@ -609,7 +609,7 @@ color: white;
 and (min-width: 1366px)
 and (max-width: 1366px)
 and (orientation: landscape)
-and (-webkit-min-device-pixel-ratio: 2) {
+and (-webkit-min-device-pixel-ratio: 1.5) {
     #top {
         background-attachment: unset;
         width: 100%;
@@ -624,7 +624,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   and (min-width: 1024px) 
   and (max-width: 1024px) 
   and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (-webkit-min-device-pixel-ratio: 1.5) {
     #top {
         min-height: 800px;
     }
