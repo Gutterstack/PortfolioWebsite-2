@@ -1393,14 +1393,153 @@ color: white;
     .grid__item2 {
         -ms-grid-row: 3;
         -ms-grid-column: 1;                
-    }
-    
+    } 
 }
-
 @media only screen and (max-width: 359px) {
     #top {
         min-height: auto;  /* change by amit */
     }
+    /* .page-header__item {
+        width: 100px;
+        height: auto;
+    } */
+    .page-header__item {
+        flex: 0 1 100px;
+    }
+    .navigation-list__item {
+        font-size: 1.25rem;
+    }
+    .navigation-list {
+        margin-right: 0rem;
+    }
+    .navigation-list li {
+        margin: .25rem .25rem;
+    }
+    .profile__name {
+        font-size: 1.85rem;
+        padding-top: 3vh;
+    }
+    .profile__dev {
+        font-size: 1rem;
+    }
+    .social-media {
+        gap: 3rem;
+        margin-top: 5vh;
+    }
+    .about__title {
+        font-size: 2.25rem;
+    }
+    .about__descr {
+        font-size: 1.05rem;
+        width: 70%;
+    }
+    .work__title {
+        font-size: 2.25rem;
+    }
+    #about .button {
+        font-size: 1rem;
+    }
+    .grid {
+        display: -ms-grid;
+        display: grid;
+        -webkit-column-gap: 1.75rem;
+           -moz-column-gap: 1.75rem;
+                column-gap: 1.75rem;
+        row-gap: 1.75rem;
+            grid-template-areas: "griditem1"
+                            "griditem2";
+        justify-items: center;                
+    }
+    .grid__item--title {
+        font-size: 1.5rem;
+    }
+    .grid__item--descr {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+    .contact__title {
+        font-size: 2.25rem;
+    }
+    .contact__title2 {
+        font-size: 1.25rem;
+    }
+    textarea {
+        width: 250px;
+        height: 200px;
+        background-color: rgba(255, 255, 255, 0.15);
+        border: 2.5px solid white;
+        font-size: .90rem!important;
+        margin-right: 0;
+    }
+input[type="text"],
+[type="email"] {
+background-color: rgba(255, 255, 255, 0.15);
+border: 2.5px solid white;
+width: 250px;
+height: 35px;
+font-weight: bolder;
+font-size: 1rem;
+color: white;
+}
+.form__name label,
+    .form__email label,
+    .form__message label {
+        display: none;
+    }
+    ::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.664);
+        opacity: 1;
+    }
+    ::-moz-placeholder {
+        color: rgba(255, 255, 255, 0.664);
+        opacity: 1;
+    }
+    :-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.664);
+        opacity: 1;
+    }
+    ::-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.664);
+        opacity: 1;
+    }
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.664);
+        opacity: 1;
+    }
+.form__name {
+    margin-right: 0;
+}
+.form__email {
+    margin-right: 0;
+}
+.form__button {
+    width: 250px;
+    font-size: 1.15rem;
+    padding: 6px 24px;
+}
+.social-media img {
+    width: 62px;
+    height: 62px;
+}
+.social-media2 img {
+    width:52px;
+    height: 52px;
+}
+    .grid__item1 {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;                
+    }
+    .grid__item2 {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;                
+    }
+} 
+
+
+/* @media only screen and (max-width: 359px) {
+    #top {
+        min-height: auto;  /* change by amit */
+    /*}
     .page-header__item {
         width: 100px;
         height: auto;
@@ -1532,7 +1671,8 @@ color: white;
         -ms-grid-row: 3;
         -ms-grid-column: 1;                
     }
-}
+} */
+
 @media only screen and (max-width: 255px) {
     #top {
         min-height: auto;  /* change by amit */
