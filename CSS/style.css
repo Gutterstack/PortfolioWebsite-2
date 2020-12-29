@@ -440,7 +440,8 @@ color: white;
     padding: .35em;
     display: none;
 }
-.back-to-top:hover .fa-2x {
+.back-to-top:hover .fa-2x,
+.back-to-top:focus .fa-2x {
     font-size: 3em;
     transition-duration: .5s;
 }
@@ -456,7 +457,22 @@ color: white;
     font-family: var(--second-font);
 }
 
+@media (hover: hover) {
 
+    .back-to-top:hover .fa-2x,
+    .back-to-top:focus .fa-2x {
+        font-size: 3em;
+        transition-duration: .5s;
+    }
+    .top_btn:hover,
+    .top_btn:focus {
+        background: linear-gradient(rgba(167,167,167,.97), rgba(167,167,167,.97));
+        transition: all 0.5s ease-in-out;
+	    cursor: pointer;
+	    color: black;
+    }
+
+}
 @media only screen 
 and (min-device-width: 1366px)
 and (max-device-width: 1366px)
