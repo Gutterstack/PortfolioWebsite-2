@@ -471,20 +471,7 @@ color: white;
     }
 }
 
-@media only screen 
-and (min-device-width: 1366px)
-and (max-device-width: 1366px)
-and (orientation: landscape) {
-    #top {
-        background-attachment: unset!important;
-        min-height: 900px;
-        width: 100%;
-        height: 100%;
-    }
-    .fa-2x {
-        font-size: 3em;
-    }
-}
+
 @media only screen and (max-width: 1200px) {
     #top {
         min-height: 800px;
@@ -617,7 +604,20 @@ and (orientation: landscape) {
         -ms-grid-column: 1;                
     }
 }
-
+@media only screen 
+and (min-device-width: 1366px)
+and (max-device-width: 1366px)
+and (orientation: landscape) {
+    #top {
+        background-attachment: unset!important;
+        min-height: 900px;
+        width: 100%;
+        height: 100%;
+    }
+    .fa-2x {
+        font-size: 3em;
+    }
+}
 @media only screen 
 and (min-device-width: 1024px)
 and (max-device-width: 1024px)
