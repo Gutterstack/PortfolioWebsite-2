@@ -405,6 +405,10 @@ color: white;
 	font-weight: bolder;
 	text-transform: uppercase;
 }
+.top_btn:visited {
+    background: rgb(39, 38, 38);
+    color: white;
+} 
 .top_btn:hover,
 .top_btn:focus {
     background: linear-gradient(rgba(167,167,167,.97), rgba(167,167,167,.97));
@@ -426,10 +430,7 @@ color: white;
 	font-weight: bolder;
 	text-transform: uppercase;
 }
-.top_btn:visited {
-    background: rgb(39, 38, 38);
-    color: white;
-} 
+
 
 .back-to-top {
     position: fixed;
@@ -475,7 +476,7 @@ and (min-device-width: 1366px)
 and (max-device-width: 1366px)
 and (orientation: landscape) {
     #top {
-        background-attachment: unset;
+        /* background-attachment: unset; */
     }
     .fa-2x {
         font-size: 3em;
