@@ -446,8 +446,6 @@ color: white;
     transition-duration: .5s;
 }
 
-
-
 .built {
     color: white;
     text-align: center;
@@ -458,12 +456,6 @@ color: white;
 }
 
 @media (hover: hover) {
-
-    .back-to-top:hover .fa-2x,
-    .back-to-top:focus .fa-2x {
-        font-size: 3em;
-        transition-duration: .5s;
-    }
     .top_btn:hover,
     .top_btn:focus {
         background: linear-gradient(rgba(167,167,167,.97), rgba(167,167,167,.97));
@@ -471,14 +463,22 @@ color: white;
 	    cursor: pointer;
 	    color: black;
     }
-
+    .back-to-top:hover .fa-2x,
+    .back-to-top:focus .fa-2x {
+        font-size: 3em;
+        transition-duration: .5s;
+    }
 }
+
 @media only screen 
 and (min-device-width: 1366px)
 and (max-device-width: 1366px)
 and (orientation: landscape) {
     #top {
         background-attachment: unset;
+    }
+    .fa-2x {
+        font-size: 3em;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -754,10 +754,13 @@ and (orientation: portrait) {
     .top_btn:hover {
         background: rgb(39, 38, 38);
         color: white;
-        
     }
-}
+    .back-to-top:hover .fa-2x, .back-to-top:focus .fa-2x {
+        font-size: 2em;
+        transition-duration: .5s;
+    }
 
+}
 @media only screen and (max-width: 1023px) {
     #top {
         min-height: 800px;
