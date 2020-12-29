@@ -476,7 +476,8 @@ and (min-device-width: 1366px)
 and (max-device-width: 1366px)
 and (orientation: landscape) {
     #top {
-        /* background-attachment: unset; */
+        min-height: 800px;
+        background-attachment: unset;
     }
     .fa-2x {
         font-size: 3em;
