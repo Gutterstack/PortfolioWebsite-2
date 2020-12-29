@@ -1405,7 +1405,7 @@ color: white;
     } */
     .page-header__item {
         flex: 0 1 200px;
-        height: auto;
+        height: 100%;
     }
     .navigation-list__item {
         font-size: 1.25rem;
