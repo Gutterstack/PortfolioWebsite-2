@@ -89,8 +89,8 @@ html,body {
     min-height: 900px;
     width: 100%;
     height: 100%;
-    /* height: 100vh;
-    height: calc(var(--vh, 1vh) * 100); */
+    height: 100vh;
+    /* height: calc(var(--vh, 1vh) * 100);  */
     
     
 }
@@ -1186,7 +1186,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .social-media {
         gap: 5rem;
-        margin-top: 5rem;
+        margin-top: 3.5rem;
     }
     .social-media img {
         width: 72px;
@@ -1293,7 +1293,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 @media only screen and (max-width: 400px) {
    
     #top {
-        height: 100vh;
         min-height: 600px; 
         /* min-height: auto;  change by amit */
     }
@@ -1320,7 +1319,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .social-media {
         gap: 3rem;
-        margin-top: 5rem;
+        margin-top: 3.5rem;
     }
     
 
@@ -1459,7 +1458,7 @@ color: white;
     }
     .social-media {
         gap: 3rem;
-        margin-top: 5rem;
+        margin-top: 3.5rem;
     }
     .about__title {
         font-size: 2.25rem;
@@ -1602,7 +1601,7 @@ color: white;
     }
     .social-media {
         gap: 2rem;
-        margin-top: 5rem;
+        margin-top: 3.5rem;
         
     }
     .social-media__icon {
