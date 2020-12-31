@@ -91,17 +91,15 @@ html,body {
     height: 100%;
     height: 100vh;
     /* height: calc(var(--vh, 1vh) * 100);  */
-    
-    
 }
+
 .profile {
     text-align: center;
     color: white;
 }
 .profile__name {
     padding-top: 12rem;
-    
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Quicksand', sans-serif;
 }
 .profile__dev {
@@ -109,7 +107,7 @@ html,body {
     font-family: 'Trispace', sans-serif;
 }
 .social-media {
-    margin-top: 10rem;
+    margin-top: 8rem;
     padding-bottom: 2rem;
     padding-inline-start: 0%;
 }
@@ -475,7 +473,7 @@ color: white;
 @media only screen and (max-width: 1200px) {
     #top {
         min-height: 800px;
-        background-attachment: unset;
+        
     }
     /* .page-header__item {
         width: 100px;
@@ -498,7 +496,7 @@ color: white;
     }
     .social-media {
         gap: 5rem;
-        margin-top: 5rem;
+        margin-top: 3.5rem;
     }
     .social-media img {
         width: 82px;
@@ -611,7 +609,7 @@ and (max-width: 1366px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 1.5) {
     #top {
-        background-attachment: unset;
+        
         width: 100%;
         height: 100%;
     }
@@ -650,7 +648,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .social-media {
         gap: 5rem;
-        margin-top: 5rem;
+        margin-top: 3.5rem;
     }
     .social-media img {
         width: 100px;
@@ -792,7 +790,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .social-media {
         gap: 5rem;
-        margin-top: 5rem;
+        margin-top: 3.5rem;
     }
     .social-media img {
         width: 82px;
@@ -922,7 +920,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .social-media {
         gap: 5rem;
-        margin-top: 5rem;
+        margin-top: 3.5rem;
     }
     .social-media img {
         width: 82px;
@@ -1052,7 +1050,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .social-media {
         gap: 5rem;
-        margin-top: 5rem;
+        margin-top: 3.5rem;
     }
     .social-media img {
         width: 82px;
@@ -1322,7 +1320,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         margin-top: 3.5rem;
     }
     
-
     .social-media img {
         width: 90px;
         height: 90px;
