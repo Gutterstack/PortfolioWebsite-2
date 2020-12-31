@@ -469,6 +469,15 @@ color: white;
         transition-duration: .5s;
     }
 }
+@media only screen and (max-width: 1300px) {
+    .profile__name {
+        padding-top: 7rem;
+    }
+    .social-media {
+        gap: 5rem;
+        margin-top: 4rem;
+    }
+}
 
 
 @media only screen and (max-width: 1200px) {
@@ -490,7 +499,7 @@ color: white;
     }
     .profile__name {
         font-size: 4rem;
-        padding-top: 4rem;
+        padding-top: 3rem;
         
     }
     .profile__dev {
@@ -785,7 +794,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .profile__name {
         font-size: 4rem;
-        padding-top: 4rem;
+        padding-top: 3rem;
     }
     .profile__dev {
         font-size: 1.75rem;
@@ -915,7 +924,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .profile__name {
         font-size: 4rem;
-        padding-top: 4rem;
+        padding-top: 3rem;
     }
     .profile__dev {
         font-size: 1.75rem;
@@ -1045,7 +1054,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .profile__name {
         font-size: 3.5rem;
-        padding-top: 4rem;
+        padding-top: 3rem;
     }
     .profile__dev {
         font-size: 1.5rem;
@@ -1179,7 +1188,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .profile__name {
         font-size: 2rem;
-        padding-top: 9rem;
+        padding-top: 8rem;
     }
     .profile__dev {
         font-size: 1.5rem;
@@ -1311,7 +1320,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .profile__name {
         font-size: 1.85rem;
-        padding-top: 7rem;
+        padding-top: 6rem;
         
     }
     .profile__dev {
@@ -1449,8 +1458,7 @@ color: white;
     }
     .profile__name {
         font-size: 1.85rem;
-        padding-top: 7%;
-        
+        padding-top: 6%;
     }
     .profile__dev {
         font-size: 1rem;
