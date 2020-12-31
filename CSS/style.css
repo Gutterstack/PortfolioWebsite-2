@@ -472,6 +472,7 @@ color: white;
 
 @media only screen and (max-width: 1200px) {
     #top {
+        background-attachment: unset;
         min-height: 800px;
         
     }
