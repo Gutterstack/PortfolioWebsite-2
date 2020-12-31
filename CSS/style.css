@@ -1293,7 +1293,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 @media only screen and (max-width: 400px) {
    
     #top {
-         min-height: 600px; 
+        height: 100vh;
+        min-height: 600px; 
         /* min-height: auto;  change by amit */
     }
     .page-header__item {
