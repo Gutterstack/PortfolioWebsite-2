@@ -227,7 +227,10 @@ margin-bottom: 4rem;
             column-gap: 1.75rem;
     row-gap: 1.75rem;
         grid-template-areas: "griditem1 griditem2";
-    justify-items: center;                
+    justify-items: center;  
+    margin-right: 1.75rem;
+    margin-left: 1.75rem;
+                  
 }
 
 .grid__item1 {
@@ -361,6 +364,8 @@ color: white;
     font-size: 2rem;
     cursor: pointer;
     color: white;
+    -webkit-appearance: none;
+    border-radius: 0;
 
 }
 .form__button:hover,
