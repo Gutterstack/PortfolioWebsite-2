@@ -122,6 +122,12 @@ html,body {
     width: 90px;
     height: 90px;
 }
+.social-media__icon:hover {
+    filter: drop-shadow(1px 11px 11px #ffffff);
+}
+.social-media__icon:focus {
+    filter: drop-shadow(1px 11px 11px #ffffff);
+}
 .aboutbtn {
     margin-top: 5.5rem;
     padding: 16px 52px;
@@ -387,6 +393,8 @@ color: white;
     margin-top: 5rem;
     padding-bottom: 2rem;
 }
+
+
 .social-media2 li {
     display: inline-block;
     list-style: none;
@@ -1620,6 +1628,7 @@ color: white;
         width: 52px;
         height: auto;
     } 
+    
     .about__title {
         font-size: 1.5rem;
     }
