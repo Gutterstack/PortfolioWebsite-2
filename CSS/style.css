@@ -267,6 +267,7 @@ margin-bottom: 4rem;
     justify-items: center;  
     margin-right: 1.75rem;
     margin-left: 1.75rem;
+    margin-bottom: 3rem;
                   
 }
 
@@ -275,6 +276,59 @@ margin-bottom: 4rem;
     -ms-grid-column: 1;
     grid-area: griditem1;
 }
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .card {
+    position: relative;
+    margin: 1em;
+    background: rgba(19, 19, 19, 20)
+  }
+  
+  
+  .card__img {
+    max-width: 100%;
+    display: inline-block;
+    transition: opacity ease-out 450ms;
+  }
+  
+  .card:hover .card__img,
+  .card:focus .card__img {
+    opacity: 0.1;
+  }
+  
+  .card__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: opacity ease-out 250ms;
+    font-family: var(--second-font);
+  }
+  
+  .card:hover .card__text,
+  .card:focus .card__text {
+    opacity: 1;
+  }
+  
+  .card__title1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0;
+  }
+  .card__title2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0;
+  }
 
 .grid__item2 {
     -ms-grid-row: 1;
@@ -286,18 +340,13 @@ margin-bottom: 4rem;
 .grid__item--title {
     font-family: var(--main-font);
     font-size: 2rem;
+    margin-top: 4rem;
 }
 
 .grid__item--img img {
     max-width: 100%;
-    max-height: 383px;
+    max-height: 373px;
 }
-
-.grid__item--descr {
-    color: black;
-    font-family: var(--second-font);
-    font-size: 1.25rem;
-} 
 
 
 #contact {
@@ -876,10 +925,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         min-height: 800px;
         
     }
-    /* .page-header__item {
-        width: 100px;
-        height: auto;
-    } */
     .navigation-list {
         margin-right: .75rem;
     }
@@ -1006,10 +1051,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     #top {
         min-height: 800px;
     }
-    /* .page-header__item {
-        width: 100px;
-        height: auto;
-    } */
+   
     .navigation-list {
         margin-right: .75rem;
     }
@@ -1136,10 +1178,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     #top {
         min-height: 800px;
     }
-    /* .page-header__item {
-        width: 100px;
-        height: auto;
-    } */
+   
     .navigation-list {
         margin-right: .75rem;
     }
@@ -1265,11 +1304,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 @media only screen and (max-width: 600px) {
     #top {
         min-height: 600px;
-        /* min-height: auto;  change by amit */ 
     }
-	/* .page-header{
-		padding:0 0.6rem;   change by amit 
-	} */
     .page-header__item {
         width: 100px;
         height: 100%;
@@ -1317,10 +1352,20 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
                             "griditem2";
         justify-items: center;                
     }
-    .grid__item--descr {
+   
+    .card__title1 {
+        font-size: 1.5rem;
+        color: white;
+        margin-bottom: 0;
+      }
+      .card__title2 {
         font-size: 1.15rem;
-        margin-bottom: 3rem;
-    }
+        color: white;
+        margin-bottom: 0;
+      }
+      .card__body2 {
+          font: .75rem;
+      }
 
     input[type="text"],
     [type="email"] {
@@ -1394,11 +1439,17 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 } 
 
+@media only screen and (max-width: 480px) {
+    .grid {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 @media only screen and (max-width: 400px) {
    
     #top {
         min-height: 600px; 
-        /* min-height: auto;  change by amit */
+        
     }
     .page-header__item {
         width: 100px;
@@ -1452,10 +1503,22 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
                             "griditem2";
         justify-items: center;                
     }
-    .grid__item--descr {
+    .card__title1 {
         font-size: 1rem;
-        margin-bottom: 3rem;
-    }
+        color: white;
+        margin-bottom: 0;
+      }
+      .card__title2 {
+        font-size: .85rem;
+        color: white;
+        margin-bottom: 0;
+      }
+      .card__body {
+          font-size: .7rem;
+      }
+      .card__body2 {
+          font-size: .7rem;
+      }
     textarea {
         width: 250px;
         height: 200px;
