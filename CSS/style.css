@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 * {
     -webkit-box-sizing: border-box;
@@ -111,8 +118,8 @@ html,body {
 
 #top {
     background-image: -o-linear-gradient( rgba(8, 8, 37, 0.8), rgba(0, 15, 80, 0.0.765)), url("../img/pic2.jpg");
-    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(8, 8, 37, 0.8)), to(rgba(0, 15, 80, 0.765))), url("../img/pic2.jpg");
     background-image: -o-linear-gradient( rgba(8, 8, 37, 0.8), rgba(0, 15, 80, 0.765)), url("../img/pic2.jpg");
+    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(8, 8, 37, 0.8)), to(rgba(0, 15, 80, 0.765))), url("../img/pic2.jpg");
     background-image: linear-gradient( rgba(8, 8, 37, 0.8), rgba(0, 15, 80, 0.765)), url("../img/pic2.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -256,7 +263,7 @@ margin-bottom: 4rem;
        -moz-column-gap: 1.75rem;
             column-gap: 1.75rem;
     row-gap: 1.75rem;
-            grid-template-areas: "griditem1 griditem2";
+                grid-template-areas: "griditem1 griditem2";
     justify-items: center;  
     margin-right: 1.75rem;
     margin-left: 1.75rem;
@@ -484,8 +491,8 @@ color: white;
 } 
 .top_btn:hover,
 .top_btn:focus {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(167,167,167,.97)), to(rgba(167,167,167,.97)));
     background: -o-linear-gradient(rgba(167,167,167,.97), rgba(167,167,167,.97));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(167,167,167,.97)), to(rgba(167,167,167,.97)));
     background: linear-gradient(rgba(167,167,167,.97), rgba(167,167,167,.97));
     -webkit-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -538,8 +545,8 @@ color: white;
 @media (hover: hover) {
     .top_btn:hover,
     .top_btn:focus {
-        background: -webkit-gradient(linear, left top, left bottom, from(rgba(167,167,167,.97)), to(rgba(167,167,167,.97)));
         background: -o-linear-gradient(rgba(167,167,167,.97), rgba(167,167,167,.97));
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(167,167,167,.97)), to(rgba(167,167,167,.97)));
         background: linear-gradient(rgba(167,167,167,.97), rgba(167,167,167,.97));
         -webkit-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
@@ -619,7 +626,7 @@ color: white;
            -moz-column-gap: 1.75rem;
                 column-gap: 1.75rem;
         row-gap: 1.75rem;
-                grid-template-areas: "griditem1"
+                    grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
     }
@@ -771,7 +778,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
            -moz-column-gap: 1.75rem;
                 column-gap: 1.75rem;
         row-gap: 1.75rem;
-                grid-template-areas: "griditem1"
+                    grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
     }
@@ -915,7 +922,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
            -moz-column-gap: 1.75rem;
                 column-gap: 1.75rem;
         row-gap: 1.75rem;
-                grid-template-areas: "griditem1"
+                    grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
     }
@@ -1045,7 +1052,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
            -moz-column-gap: 1.75rem;
                 column-gap: 1.75rem;
         row-gap: 1.75rem;
-                grid-template-areas: "griditem1"
+                    grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
     }
@@ -1175,7 +1182,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
            -moz-column-gap: 1.75rem;
                 column-gap: 1.75rem;
         row-gap: 1.75rem;
-                grid-template-areas: "griditem1"
+                    grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
     }
@@ -1306,7 +1313,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
            -moz-column-gap: 1.75rem;
                 column-gap: 1.75rem;
         row-gap: 1.75rem;
-                grid-template-areas: "griditem1"
+                    grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
     }
@@ -1441,7 +1448,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
            -moz-column-gap: 1.75rem;
                 column-gap: 1.75rem;
         row-gap: 1.75rem;
-                grid-template-areas: "griditem1"
+                    grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
     }
@@ -1576,7 +1583,7 @@ color: white;
            -moz-column-gap: 1.75rem;
                 column-gap: 1.75rem;
         row-gap: 1.75rem;
-                grid-template-areas: "griditem1"
+                    grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
     }
@@ -1725,7 +1732,7 @@ color: white;
            -moz-column-gap: 1.75rem;
                 column-gap: 1.75rem;
         row-gap: 1.75rem;
-                grid-template-areas: "griditem1"
+                    grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
     }
@@ -1815,7 +1822,6 @@ color: white;
         -ms-grid-column: 1;                
     }
 }
-
 
 
 
