@@ -277,13 +277,6 @@ margin-bottom: 4rem;
     grid-area: griditem1;
 }
 
-.container {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-  }
-
 
   .card {
     position: relative;
@@ -317,6 +310,7 @@ margin-bottom: 4rem;
   .card:hover .card__text,
   .card:focus .card__text {
     opacity: 1;
+
   }
   
   .card__title1 {
