@@ -12,7 +12,7 @@
 }
 
 :root {
-    --main-font: 'Quicksand', sans-serif;
+    --main-font: 'Montserrat', sans-serif;
     --second-font: 'Trispace', sans-serif;
 }
 
@@ -68,7 +68,7 @@ html,body {
 
 .navigation-list a {
     color: white;
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--main-font);
     text-decoration: none;
 
 }
@@ -141,7 +141,7 @@ html,body {
 .profile__name {
     padding-top: 12rem;
     font-size: 4rem;
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--main-font);
 }
 .profile__dev {
     font-size: 2rem;
