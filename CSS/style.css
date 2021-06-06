@@ -145,7 +145,8 @@ html,body {
 }
 .profile__dev {
     font-size: 2rem;
-    font-family: 'Trispace', sans-serif;
+    font-family: var(--main-font);
+
 }
 .social-media {
     margin-top: 8rem;
