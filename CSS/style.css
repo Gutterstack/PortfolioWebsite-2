@@ -218,6 +218,30 @@ margin-bottom: 4rem;
     margin-top: 30px;
 }
 
+.about__skills {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.about__skills--title {
+    font-family: var(--main-font);
+    font-size: 2.25rem;
+}
+
+.about__skills--list {
+    list-style: none;
+    font-family: var(--second-font);
+    padding-inline-start: 0;
+    margin: 2rem;
+    font-size: 1.35rem;
+    
+}
+.about__skills--list li{
+    margin: 1rem;
+    
+}
+
 .button {
     width: 15%;
     padding: 12px 24px;

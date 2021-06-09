@@ -4,7 +4,7 @@
 }
 
 :root {
-    --main-font: 'Quicksand', sans-serif;
+    --main-font: 'Montserrat', sans-serif;
     --second-font: 'Trispace', sans-serif;
 }
 
@@ -36,7 +36,7 @@ body {
 }
 .intouch {
     font-family: var(--second-font);
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
     font-size: 1.5rem;
 }
@@ -46,9 +46,9 @@ body {
     font-family: var(--main-font);
     margin-top: 3rem;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     border: solid white 2px;
-    padding: 8px;
+    padding: 12px 30px;
     
 }
 .back_con a:hover {
