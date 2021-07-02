@@ -11,3 +11,64 @@
 //  let vh = window.innerHeight * 0.01;
 // document.documentElement.style.setProperty('--vh', `${vh}px`);
 // });
+
+
+(function() {
+    let form = document.querySelector('#contact-form');
+    let emailInput = document.querySelector('#email');
+    let nameInput = document.querySelector('#name');
+
+  
+
+    function validateEmail() {
+        let value = emailInput.value;
+        let invalidInput = input.classList.add('input-invalid');
+        if (!value) {
+            return invalidInput;
+        }
+        if (value.indexOf('@') === -1) {
+            return invalidInput;
+        }
+        // invalidInput(emailInput, null);
+        else{ 
+             return true;
+        }
+       
+    }
+
+    function validateName() {
+        let value = nameInput.value;
+        let invalidInput = input.classList.add('input-invalid');
+        if (!value) {
+            return invalidInput;
+        }
+
+        // invalidInput(nameInput, null);
+        else{
+            return true;
+        }
+    }
+        
+    
+
+    function validateForm() {
+        let isValidEmail = validateEmail();
+        let isValidName = validateName();
+        return isValidEmail && isValidName;
+    }
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (validateForm()) {
+            alert('Succes!');
+        }
+    });
+
+    emailInput.addEventListener('input', validateEmail);
+    nameInput.addEventListener('input', validateName);
+})();
+
+
+   // if (value.length < 8) {
+        //     return invalidInput;
+        // }

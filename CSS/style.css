@@ -292,7 +292,7 @@ margin-bottom: 4rem;
     justify-items: center;  
     margin-right: 1.75rem;
     margin-left: 1.75rem;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
                   
 }
 
@@ -442,6 +442,7 @@ font-weight: bolder;
 font-size: 1.25rem;
 color: white;
 }
+
 .form__name {
     margin-right: 7.925rem;
     
@@ -457,6 +458,10 @@ color: white;
 .form__message {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.input-invalid {
+    border-color: red;
 }
 
 .form__button {
