@@ -402,6 +402,10 @@ label {
     font-family: var(--second-font);
     font-size: 1.25rem;
 }
+input:focus,
+textarea:focus {
+    box-shadow:0px 0px 25px 6px white;
+}
 
 textarea {
     width: 600px;
