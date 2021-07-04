@@ -1471,6 +1471,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         padding-left: 7rem;
     }
 }
+
 @media only screen and (max-width: 600px) {
     #play-music {
         width: 35%;
