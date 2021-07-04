@@ -37,10 +37,25 @@
                 </li>
                 <li role="presentation">
                     <a href="#contact" role="menuitem" class="navigation-list__item"><span class="nav_border">Contact</span></a>
-                </li>    
+                </li> 
+                <li role="presentation">
+                    <audio id="player" src="media/01 Eternal.mp3"></audio>
+<div id="play-music">
+    <h3>Play Music?</h3>
+    <i class="fas fa-play fa-2x" class="play-music-button" onclick="document.getElementById('player').play()"></i>
+    <i class="fas fa-pause fa-2x" class="pause-music-button" onclick="document.getElementById('player').pause()"></i>    
+</div>
+                </li>   
             </ul>
         </nav>
     </header>
+
+<!-- <audio id="player" src="media/01 Eternal.mp3"></audio>
+<div>
+    <button class="play-music-button" onclick="document.getElementById('player').play()">Play Music?<button class="pause-music-button" onclick="document.getElementById('player').pause()">Pause Music</button></button> 
+    
+</div> -->
+
 
     <div class="profile">
         <p class="profile__name">Robert Uebelhor</p>
@@ -91,12 +106,11 @@
 <section id="work">
     <h1 class="work__title">My Work</h1>
             <div class="grid">
-
                 <div class="grid__item1">
-                    <h2 class="grid__item--title">Personal Site</h2>
+                    <!-- <h2 class="grid__item--title">Personal Site</h2> -->
                         <div class="card">
                             <a href="https://github.com/Gutterstack/PortfolioWebsite-2" target="_blank" class="container">
-                                <img src="img/personal_ss.png" alt="proffesional-site" class="card__img">
+                                <img width="700" height="455" src="img/personal_ss.jpg" alt="proffesional-site" class="card__img">
                           <div class="card__text">
                             <h3 class="card__title1">My personal site.</h3>
                             <p class="card__body">(HTML, CSS and JS)</p>
@@ -108,10 +122,10 @@
                
 
                 <div class="grid__item2">
-                    <h2 class="grid__item--title">Colombia</h2>
+                    <!-- <h2 class="grid__item--title">Colombia</h2> -->
                         <div class="card">
                             <a href="https://github.com/Gutterstack/Colombia" target="_blank" class="container">
-                                <img src="img/colo.png" alt="colombia-site" class="card__img">
+                                <img width="700" height="455" src="img/colo.jpg" alt="colombia-site" class="card__img">
                             
                           <div class="card__text">
                             <h3 class="card__title2">Expat service for individuals moving to Colombia.</h3>
@@ -122,10 +136,23 @@
                 </div>
 
                 <div class="grid__item3">
-                    <h2 class="grid__item--title">To Do List</h2>
+                    <!-- <h2 class="grid__item--title">To Do List</h2> -->
                         <div class="card">
                             <a href="https://github.com/Drxl95/To-Do-List" target="_blank" class="container">
-                                <img src="img/to-do-list-img.png" alt="to-do-list-app" class="card__img">
+                                <img width="700" height="455" src="img/to-do-list-img..jpg" alt="to-do-list-app" class="card__img">
+                            
+                          <div class="card__text">
+                            <h3 class="card__title2">Small, basic app that entails a to-do list.</h3>
+                            <p class="card__body2">(HTML, CSS, JS, and jquery)</p>
+                          </div>
+                            </a>
+                        </div>
+                </div>
+                <div id="invisible-flexItem" style="opacity: 0;" class="grid__item3">
+                    <!-- <h2 class="grid__item--title">To Do List</h2> -->
+                        <div class="card">
+                            <!-- <a href="" target="_blank" class="container"> -->
+                                <img width="700" height="455" src="img/to-do-list-img..jpg" alt="to-do-list-app" class="card__img">
                             
                           <div class="card__text">
                             <h3 class="card__title2">Small, basic app that entails a to-do list.</h3>
@@ -136,6 +163,8 @@
                 </div>
             
             </div>
+
+            
 </section>
 
 <!--Contact Me Section-->

@@ -44,7 +44,8 @@ html,body {
 .page-header__item {
             -webkit-box-flex: 0;
                 -ms-flex: 0 1 200px;
-                    flex: 0 1 200px;   
+                    flex: 0 1 200px; 
+                    height: 200px;  
 }
 
 
@@ -116,6 +117,40 @@ html,body {
     transform: scaleX(1);
 }
 
+#play-music {
+    font-family: var(--main-font);
+    font-weight: 700;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1rem;
+    width: 10%;
+    margin: 0;
+    float: right;
+}
+#play-music h3 {
+    margin-top: 0;
+    margin-bottom: .75rem;
+}
+
+.fa-play {
+    margin-right: 1rem;
+    cursor: pointer;
+
+}
+.fa-play:hover {
+    filter: drop-shadow(0px 11px 11px #ffffff);
+    transition-duration: .7s;
+}
+
+.fa-pause {
+    cursor:pointer;
+}
+
+.fa-pause:hover {
+    filter: drop-shadow(0px 11px 11px #ffffff);
+    transition-duration: .7s;
+}
 #top {
     background-image: -o-linear-gradient( rgba(8, 8, 37, 0.8), rgba(0, 15, 80, 0.0.765)), url("../img/pic2.jpg");
     background-image: -o-linear-gradient( rgba(8, 8, 37, 0.8), rgba(0, 15, 80, 0.765)), url("../img/pic2.jpg");
@@ -139,7 +174,7 @@ html,body {
 }
 
 .profile__name {
-    padding-top: 12rem;
+    padding-top: 7rem;
     font-size: 4rem;
     font-family: var(--main-font);
 }
@@ -279,17 +314,24 @@ margin-bottom: 4rem;
     font-size: 3rem;
     margin: 0;
     padding-top: 3rem;
+    padding-bottom: 3rem;
     
 }
+
 .grid {
-    display: -ms-grid;
-    display: grid;
-    -webkit-column-gap: 1.75rem;
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+    /*👉display: -ms-grid;
+    display: grid;👈*/
+   /*👉 -webkit-column-gap: 1.75rem;
        -moz-column-gap: 1.75rem;
             column-gap: 1.75rem;
-    row-gap: 1.75rem;
-                grid-template-areas: "griditem1 griditem2";
-    justify-items: center;  
+    row-gap: 1.75rem;👈*/
+ 
+               /*👉 grid-template-areas: "griditem1 griditem2"
+                                    "griditem3 none";👈*/
+   /*👉 justify-items: center; 👈*/ 
     margin-right: 1.75rem;
     margin-left: 1.75rem;
     padding-bottom: 3rem;
@@ -297,6 +339,7 @@ margin-bottom: 4rem;
 }
 
 .grid__item1 {
+    justify-self: end;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: griditem1;
@@ -305,13 +348,13 @@ margin-bottom: 4rem;
 
   .card {
     position: relative;
-    margin: 1em;
+    margin: 0em;
     background: rgba(19, 19, 19, 20)
   }
   
   
   .card__img {
-    max-width: 100%;
+  /*👉  max-width: 100%;👈*/
     display: inline-block;
     transition: opacity ease-out 450ms;
   }
@@ -329,7 +372,7 @@ margin-bottom: 4rem;
     color: white;
     opacity: 0;
     transition: opacity ease-out 250ms;
-    font-family: var(--second-font);
+    font-family: var(--main-font);
   }
   
   .card:hover .card__text,
@@ -353,7 +396,7 @@ margin-bottom: 4rem;
     -ms-grid-row: 1;
     -ms-grid-column: 3;
     grid-area: griditem2;
-    
+    justify-self: start;
 }
 
 .grid__item--title {
@@ -367,6 +410,12 @@ margin-bottom: 4rem;
     max-height: 373px;
 }
 
+.grid__item3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: griditem3;
+    justify-self: end;
+}
 
 #contact {
     background-image: -o-linear-gradient( rgba(78, 3, 85, 0.75), rgba(9, 41, 110, 0.30)), url("../img/abstract-dark.jpg");
@@ -399,7 +448,7 @@ form {
 
 label {
     color: white;
-    font-family: var(--second-font);
+    font-family: var(--main-font);
     font-size: 1.25rem;
 }
 input:focus,
@@ -640,6 +689,17 @@ color: white;
                 transition-duration: .5s;
     }
 }
+
+
+@media only screen and (max-width: 1460px) {
+    .card__img {
+        /*👉  max-width: 100%;👈*/
+            width: 500px;
+            height: 305px; 
+          display: inline-block;
+          transition: opacity ease-out 450ms;
+        }
+}
 @media only screen and (max-width: 1300px) {
     .profile__name {
         padding-top: 7rem;
@@ -649,18 +709,16 @@ color: white;
         margin-top: 4rem;
     }
 }
-
-
 @media only screen and (max-width: 1200px) {
     #top {
         background-attachment: unset;
         min-height: 800px;
         
     }
-    /* .page-header__item {
-        width: 100px;
-        height: auto;
-    } */
+     .page-header__item {
+        width: 200px;
+        height: 200px;
+    } 
     .navigation-list {
         margin-right: .75rem;
     }
@@ -668,6 +726,33 @@ color: white;
         margin-bottom: 1.75rem;
         font-size: 1.75rem;
     }
+    
+#play-music {
+    font-family: var(--main-font);
+    font-weight: 700;
+/*👉    background-color: white;
+    padding: 5px 0px;👈*/
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1rem;
+    width: 10%;
+    margin: 0;
+    float: right;
+    margin-top: 0;
+}
+#play-music h3 {
+    margin-top: 0;
+    margin-bottom: .75rem;
+}
+
+.fa-play {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.fap-pause {
+    cursor:pointer;
+}
     .profile__name {
         font-size: 4rem;
         padding-top: 3rem;
@@ -697,7 +782,7 @@ color: white;
     .work__title {
         font-size: 3rem;
     }
-    .grid {
+/*👉    .grid {
         display: -ms-grid;
         display: grid;
         -webkit-column-gap: 1.75rem;
@@ -707,11 +792,19 @@ color: white;
                     grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
-    }
+    }👈*/
     .grid__item--descr {
         font-size: 1.5rem;
         margin-bottom: 3rem;
     }
+    .card__img {
+        /*👉  max-width: 100%;👈*/
+            width: 400px;
+            height: 255px; 
+          display: inline-block;
+          transition: opacity ease-out 450ms;
+        }
+
 
     input[type="text"],
     [type="email"] {
@@ -849,7 +942,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     .work__title {
         font-size: 3rem;
     }
-    .grid {
+/*👉    .grid {
         display: -ms-grid;
         display: grid;
         -webkit-column-gap: 1.75rem;
@@ -859,7 +952,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
                     grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
-    }
+    }👈*/
     .grid__item--descr {
         font-size: 1.5rem;
         margin-bottom: 3rem;
@@ -989,7 +1082,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     .work__title {
         font-size: 3rem;
     }
-    .grid {
+   /*👉 .grid {
         display: -ms-grid;
         display: grid;
         -webkit-column-gap: 1.75rem;
@@ -999,7 +1092,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
                     grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
-    }
+    }👈*/
     .grid__item--descr {
         font-size: 1.5rem;
         margin-bottom: 3rem;
@@ -1076,6 +1169,23 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         -ms-grid-column: 1;                
     }
 }
+@media only screen and (max-width: 1000px) {
+    #play-music {
+        width: 20%;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .card__img {
+            width: 300px;
+            height: 205px; 
+        }
+        .card__title1 {
+            font-size: 1rem;
+        }
+        .card__title2 {
+            font-size: 1rem;
+        }
+}
 @media only screen and (max-width: 800px) {
     #top {
         min-height: 800px;
@@ -1087,6 +1197,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     .navigation-list li {
         margin-bottom: 1.75rem;
         font-size: 1.75rem;
+    }
+    #play-music {
+        width: 25%;
     }
     .profile__name {
         font-size: 4rem;
@@ -1117,7 +1230,10 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         font-size: 3rem;
     }
     .grid {
-        display: -ms-grid;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    /*👉    display: -ms-grid;
         display: grid;
         -webkit-column-gap: 1.75rem;
            -moz-column-gap: 1.75rem;
@@ -1125,8 +1241,17 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         row-gap: 1.75rem;
                     grid-template-areas: "griditem1"
                             "griditem2";
-        justify-items: center;                
+        justify-items: center;   👈*/             
     }
+    .card__img {
+         width: 400px;
+    height: 255px;
+    }
+
+    #invisible-flexItem {
+        display: none;
+    }
+    
     .grid__item--descr {
         font-size: 1.5rem;
         margin-bottom: 3rem;
@@ -1243,7 +1368,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     .work__title {
         font-size: 3rem;
     }
-    .grid {
+
+/*👉    .grid {
         display: -ms-grid;
         display: grid;
         -webkit-column-gap: 1.75rem;
@@ -1253,7 +1379,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
                     grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
-    }
+    }👈*/
     .grid__item--descr {
         font-size: 1.5rem;
         margin-bottom: 3rem;
@@ -1330,7 +1456,25 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         -ms-grid-column: 1;                
     }
 }
+
+/*👉@media only screen and (max-width: 650px) {
+    #play-music {
+        width: 35%;
+        padding-left: 7rem;
+    }
+}👈*/
+
+@media only screen and (max-width: 650px) {
+    #play-music {
+        width: 60%;
+        padding-left: 7rem;
+    }
+}
 @media only screen and (max-width: 600px) {
+    #play-music {
+        width: 35%;
+        padding-left: 0rem;
+    }
     #top {
         min-height: 600px;
     }
@@ -1370,7 +1514,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     .work__title {
         font-size: 2.5rem;
     }
-    .grid {
+/*👉    .grid {
         display: -ms-grid;
         display: grid;
         -webkit-column-gap: 1.75rem;
@@ -1380,7 +1524,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
                     grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
-    }
+    }👈*/
    
     .card__title1 {
         font-size: 1.5rem;
@@ -1474,6 +1618,16 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         margin-right: 0;
     }
 }
+
+@media only screen and (max-width: 454px) {
+    #play-music {
+        width: 60%;
+    }
+    .grid {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 @media only screen and (max-width: 400px) {
    
     #top {
@@ -1521,7 +1675,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     .work__title {
         font-size: 2.5rem;
     }
-    .grid {
+/*👉    .grid {
         display: -ms-grid;
         display: grid;
         -webkit-column-gap: 1.75rem;
@@ -1531,6 +1685,10 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
                     grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
+    }👈*/
+    .card__img {
+        width: 300px;
+        height: 195px;
     }
     .card__title1 {
         font-size: 1rem;
@@ -1668,7 +1826,7 @@ color: white;
     #about .button {
         font-size: 1rem;
     }
-    .grid {
+/*👉    .grid {
         display: -ms-grid;
         display: grid;
         -webkit-column-gap: 1.75rem;
@@ -1678,7 +1836,7 @@ color: white;
                     grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
-    }
+    }👈*/
     .grid__item--title {
         font-size: 1.5rem;
     }
@@ -1764,6 +1922,13 @@ color: white;
     }
 } 
 
+@media only screen and (max-width: 300px) {
+    .card__img {
+        width: 250px;
+        height: 150px;
+    }
+   
+}
 @media only screen and (max-width: 255px) {
     #top {
         min-height: 500px;
@@ -1817,7 +1982,7 @@ color: white;
     #about .button {
         font-size: .75rem;
     }
-    .grid {
+ /*👉   .grid {
         display: -ms-grid;
         display: grid;
         -webkit-column-gap: 1.75rem;
@@ -1827,7 +1992,7 @@ color: white;
                     grid-template-areas: "griditem1"
                             "griditem2";
         justify-items: center;                
-    }
+    }👈*/
     .grid__item--title {
         font-size: 1.25rem;
     }
