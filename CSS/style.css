@@ -1128,6 +1128,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     #play-music {
         width: 20%;
     }
+  
 }
 @media only screen and (max-width: 950px) {
     .card__img {
@@ -1422,7 +1423,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .profile__name {
         font-size: 2rem;
-        padding-top: 6rem;
+        padding-top: 2rem;
     }
     .profile__dev {
         font-size: 1.5rem;
@@ -1571,7 +1572,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .profile__name {
         font-size: 1.85rem;
-        padding-top: 6rem;
+        padding-top: 2rem;
         
     }
     .profile__dev {

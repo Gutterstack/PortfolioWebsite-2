@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe62f73f-a3e7-4f09-a564-a273da428044" name="Default Changelist" comment="" />
+    <list default="true" id="fe62f73f-a3e7-4f09-a564-a273da428044" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +17,7 @@
   </component>
   <component name="ProjectId" id="1usOlWCiqiFF6mZz8pETnFl8RvV" />
   <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -32,5 +35,19 @@
       <updated>1625450982116</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625459393339">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1625459393339" />
+    <state x="773" y="266" key="AndroidProcessChooserDialog" timestamp="1625459602052">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="773" y="266" key="AndroidProcessChooserDialog/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1625459602052" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1625459592724">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1625459592724" />
   </component>
 </project>
