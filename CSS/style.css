@@ -257,6 +257,7 @@ margin-bottom: 4rem;
     margin-top: 2rem;
     margin-bottom: 5rem;
     text-align: center;
+
 }
 
 .about__skills--title {
@@ -270,11 +271,15 @@ margin-bottom: 4rem;
     padding-inline-start: 0;
     margin: 2rem;
     font-size: 1.35rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     
 }
 .about__skills--list li{
     margin: 1rem;
-    
+    border: 2px solid white;
+    padding: 12px 24px;
 }
 
 .button {
