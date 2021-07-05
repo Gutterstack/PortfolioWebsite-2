@@ -1230,7 +1230,20 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     .work__title {
         font-size: 3rem;
     }
-
+    .grid {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    /*👉    display: -ms-grid;
+        display: grid;
+        -webkit-column-gap: 1.75rem;
+           -moz-column-gap: 1.75rem;
+                column-gap: 1.75rem;
+        row-gap: 1.75rem;
+                    grid-template-areas: "griditem1"
+                            "griditem2";
+        justify-items: center;   👈*/             
+    }
     .card__img {
          width: 400px;
     height: 255px;
@@ -1357,11 +1370,17 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         font-size: 3rem;
     }
 
-    .grid {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;    
-    }
+/*👉    .grid {
+        display: -ms-grid;
+        display: grid;
+        -webkit-column-gap: 1.75rem;
+           -moz-column-gap: 1.75rem;
+                column-gap: 1.75rem;
+        row-gap: 1.75rem;
+                    grid-template-areas: "griditem1"
+                            "griditem2";
+        justify-items: center;                
+    }👈*/
     .grid__item--descr {
         font-size: 1.5rem;
         margin-bottom: 3rem;
