@@ -14,8 +14,6 @@
     <link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="normalize">
     <link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
-    <link rel=”stylesheet” href=”css/bootstrap.css”>
-    <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
 
 </head>
@@ -49,12 +47,6 @@
             </ul>
         </nav>
     </header>
-
-<!-- <audio id="player" src="media/01 Eternal.mp3"></audio>
-<div>
-    <button class="play-music-button" onclick="document.getElementById('player').play()">Play Music?<button class="pause-music-button" onclick="document.getElementById('player').pause()">Pause Music</button></button> 
-    
-</div> -->
 
 
     <div class="profile">
@@ -105,6 +97,7 @@
 
 <section id="work">
     <h1 class="work__title">My Work</h1>
+        <section class="flex-grid-container">
             <div class="grid">
                 <div class="grid__item1">
                     <!-- <h2 class="grid__item--title">Personal Site</h2> -->
@@ -163,6 +156,8 @@
                 </div>
             
             </div>
+        </section>
+           
 
             
 </section>
@@ -177,15 +172,15 @@
     
         <form action="" method="POST" id="contact-form">
         <div class="form__name">
-            <label class="standard-label" for="name">Your Name  </label>
+            <label class="standard-label" for="name">Your Name:</label>
             <input  style="font-family: 'Trispace', sans-serif;" type="text" id="name" required placeholder="Your Name">
         </div>
         <div class="form__email">
-            <label class="standard-label" for="contact-email">Email  </label>
+            <label class="standard-label" for="contact-email">Email:</label>
             <input style="font-family: 'Trispace', sans-serif;" type="email" id="contact-email" required placeholder="Your Email">
         </div>
         <div class="form__message">
-            <label class="standard-label" for="message">Message  </label>
+            <label class="standard-label" for="message">Message:</label>
             <textarea style="font-weight: bolder; font-size: 1.25rem; color: white; resize:none; font-family: 'Trispace', sans-serif;" id="message" required placeholder="Type your message here..."></textarea>
         </div>
         <div>
