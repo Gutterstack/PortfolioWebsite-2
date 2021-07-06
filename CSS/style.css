@@ -276,10 +276,10 @@ margin-bottom: 4rem;
     justify-content: space-evenly;
     
 }
-.about__skills--list li{
-    margin: 1rem;
-    border: 2px solid white;
-    padding: 12px 24px;
+
+.logo {
+    width: 100px;
+    height: 100px;
 }
 
 .button {
@@ -311,6 +311,52 @@ margin-bottom: 4rem;
 
 /*MY WORK SECTION*/
 
+.remodal {
+    background: rgb(39, 38, 38)!important;
+    color: white!important;
+    font-family: var(--main-font);
+}
+.remodal__title {
+    padding: 0rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.mockup {
+    max-width: 100%;
+    background: white;
+}
+
+.remodal__description {
+    text-align: left;
+}
+.remodal__description h2 {
+    font-size: 1rem;
+}
+.remodal__description p {
+    font-size: .85rem;
+}
+.remodal-confirm, .remodal-cancel {
+    padding: 12px 52px!important;
+    font-weight: 600!important;
+}
+
+.remodal-confirm {
+    border: white 2px solid!important;
+    background-color: transparent!important;
+}
+.remodal-confirm:hover {
+    background: white!important;
+    color: rgb(39, 38, 38)!important;
+}
+.remodal-cancel {
+    border: white 2px solid!important;
+    background-color: transparent!important;
+}
+.remodal-cancel:hover {
+    background: white!important;
+    color: rgb(39, 38, 38)!important;
+}
 #work {
     text-align: center;
     margin-bottom: 5rem;
@@ -395,112 +441,6 @@ h1 {
       }
   }
 
-
-/*👉#work {
-    text-align: center;
-    background-color: rgb(253, 251, 247);
-}
-
-
-.work__title {
-    font-family: var(--main-font);
-    font-size: 3rem;
-    margin: 0;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    
-}
-
-.grid {
-    display: flex;
-    flex-wrap: wrap;      
-    justify-content: center;
-    margin-right: 1.75rem;
-    margin-left: 1.75rem;
-    padding-bottom: 3rem;
-                  
-}
-
-.grid__item1 {
-    
-    justify-self: end;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: griditem1;
-}
-
-
-  .card {
-    
-    position: relative;
-    margin: 0em;
-    background: rgba(19, 19, 19, 20)
-  }
-  
-  
-  .card__img {
-
-    display: inline-block;
-    transition: opacity ease-out 450ms;
-  }
-  
-  .card:hover .card__img,
-  .card:focus .card__img {
-    opacity: 0.1;
-  }
-  
-  .card__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    opacity: 0;
-    transition: opacity ease-out 250ms;
-    font-family: var(--main-font);
-  }
-  
-  .card:hover .card__text,
-  .card:focus .card__text {
-    opacity: 1;
-
-  }
-  
-  .card__title1 {
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 0;
-  }
-  .card__title2 {
-    font-size: 1.5rem;
-    color: white;
-    margin-bottom: 0;
-  }
-
-.grid__item2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    grid-area: griditem2;
-    justify-self: start;
-}
-
-.grid__item--title {
-    font-family: var(--main-font);
-    font-size: 2rem;
-    margin-top: 4rem;
-}
-
-.grid__item--img img {
-    max-width: 100%;
-    max-height: 373px;
-}
-
-.grid__item3 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    grid-area: griditem3;
-    justify-self: end;
-}👈*/
 
 #contact {
     background-image: -o-linear-gradient( rgba(78, 3, 85, 0.75), rgba(9, 41, 110, 0.30)), url("../img/abstract-dark.jpg");
@@ -1639,6 +1579,13 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         margin-left: 0;
         margin-right: 0;
     }
+}
+@media only screen and (max-width: 410px) {
+    .remodal-confirm, .remodal-cancel {
+        padding: 12px 0px!important;
+        font-weight: 600!important;
+    }
+    
 }
 @media only screen and (max-width: 400px) {
    

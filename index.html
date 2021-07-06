@@ -15,6 +15,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="normalize">
     <link href="https://fonts.googleapis.com/css?family=Antic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" href="../dist/remodal.css">
+<link rel="stylesheet" href="../dist/remodal-default-theme.css">
 
 </head>
 
@@ -74,17 +76,36 @@
         <div class="about__flex">  
             <p class="about__descr">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <img class="portrait" src="https://via.placeholder.com/150" alt="portrait" >
+            <!-- <img class="portrait" src="https://via.placeholder.com/150" alt="portrait" > -->
         </div>
         <div class="about__skills">
             <h1 class="about__skills--title">My Skills</h1>
             <ul class="about__skills--list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>SEO</li>
+                <li>
+                    <div id="html-icon">
+                      <img id="html-img" class="logo" src="img/html5.svg" alt="html-icon">
+                    </div>
+                </li>
+                <li>
+                  <div>
+                    <img class="logo" src="img/css-3 (1).svg" alt="css-icon">
+                  </div>
+              </li>
+              <li>
+                <div>
+                  <img class="logo" src="img/javascript.svg" alt="javascript-icon">
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img class="logo" src="img/Node.svg" alt="node-icon">
+                </div>
+                <li>
+                  <div>
+                    <img class="logo" src="img/boot.svg" alt="bootstrap-icon">
+                  </div>
+              </li>
+            </li>
             </ul>
         </div>
         
@@ -92,6 +113,31 @@
 </section>    
         
 <!--My Work Section-->
+
+<!--Colombia Modal-->
+
+<div class="remodal" data-remodal-id="modal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <h1 class="remodal__title">Expat Colombia</h1>
+  <img class="mockup" src="img/mockup.png" alt="responsive">
+  <div class="remodal__description">
+    <h2>Description:</h2>
+  <p>
+    Expat Service for people moving to Colombia. They provide consultations, tours, and assist in housing. 
+  </p>
+  <h2>Built with</h2>
+  <p>HTML<br>
+     CSS<br>
+    Javascript
+</p>
+  <br>
+  </div>
+  
+  <button data-remodal-action="cancel" class="remodal-cancel">Close</button>
+  <button type="button" data-remodal-action="confirm" class="remodal-confirm" onclick="location.href='https://github.com/Drxl95/Colombia';" value="Go to Github" />Github</button>
+</div>
+        
+
 
 <div class="ScriptTop">
     <div class="rt-container">
@@ -128,11 +174,11 @@
 <!-- Image row 1 -->
     <div class="row">
   <div class="column">
-    <a href="https://github.com/Drxl95/Colombia">
+    <a href="#modal">
       <div class="container">
         <img src="img/colo-1280-1024.jpg" class="image">
         <div class="overlay">
-          <div class="text">Expat Service for people moving to Colombia<br>HTML, CSS, JS</div>
+          <div class="text">Expat Colombia</div>
         </div>
       </div>
     </a>
@@ -198,73 +244,6 @@
     </div>
 </section>
 
-<!-- <section id="work">
-    <h1 class="work__title">My Work</h1>
-        <section class="flex-grid-container">
-            <div class="grid">
-                <div class="grid__item1">
-
-                        <div class="card">
-                            <a href="https://github.com/Gutterstack/PortfolioWebsite-2" target="_blank" class="container">
-                                <img width="700" height="455" src="img/personal_ss.jpg" alt="proffesional-site" class="card__img">
-                          <div class="card__text">
-                            <h3 class="card__title1">My personal site.</h3>
-                            <p class="card__body">(HTML, CSS and JS)</p>
-                          </div>
-                            </a>
-                     
-                        </div>
-                </div>
-               
-
-                <div class="grid__item2">
-
-                        <div class="card">
-                            <a href="https://github.com/Gutterstack/Colombia" target="_blank" class="container">
-                                <img width="700" height="455" src="img/colo.jpg" alt="colombia-site" class="card__img">
-                            
-                          <div class="card__text">
-                            <h3 class="card__title2">Expat service for individuals moving to Colombia.</h3>
-                            <p class="card__body2">(HTML, CSS and JS)</p>
-                          </div>
-                            </a>
-                        </div>
-                </div>
-
-                <div class="grid__item3">
-                  
-                        <div class="card">
-                            <a href="https://github.com/Drxl95/To-Do-List" target="_blank" class="container">
-                                <img width="700" height="455" src="img/to-do-list-img..jpg" alt="to-do-list-app" class="card__img">
-                            
-                          <div class="card__text">
-                            <h3 class="card__title2">Small, basic app that entails a to-do list.</h3>
-                            <p class="card__body2">(HTML, CSS, JS, and jquery)</p>
-                          </div>
-                            </a>
-                        </div>
-                </div>
-                <div id="invisible-flexItem" style="opacity: 0;" class="grid__item3">
-             
-                        <div class="card">
-                            <a href="" target="_blank" class="container">
-                                <img width="700" height="455" src="img/to-do-list-img..jpg" alt="to-do-list-app" class="card__img">
-                            
-                          <div class="card__text">
-                            <h3 class="card__title2">Small, basic app that entails a to-do list.</h3>
-                            <p class="card__body2">(HTML, CSS, JS, and jquery)</p>
-                          </div>
-                            </a>
-                        </div>
-                </div>
-            
-            </div>
-        </section>
-           
-
-            
-</section> -->
-
 <!--Contact Me Section-->
 
 <footer id="contact">
@@ -327,7 +306,8 @@
     crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    
+    <script src="../dist/remodal.min.js"></script>
+
  
 </body>
 
