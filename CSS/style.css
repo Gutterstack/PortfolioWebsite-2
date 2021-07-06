@@ -319,6 +319,7 @@ margin-bottom: 4rem;
 .remodal__title {
     padding: 0rem;
     margin-bottom: 3rem;
+    margin-top: 0rem;
     font-size: 2rem;
 }
 
@@ -329,6 +330,7 @@ margin-bottom: 4rem;
 
 .remodal__description {
     text-align: left;
+  
 }
 .remodal__description h2 {
     font-size: 1rem;
