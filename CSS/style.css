@@ -329,7 +329,7 @@ margin-bottom: 4rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+  /*👉  width: 50%;👈*/
     /*👉padding: 10px 20px;👈*/
     display: flex;
     flex-direction: column;
@@ -1092,6 +1092,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 
 }
+
 @media only screen and (max-width: 1023px) {
     #top {
         min-height: 800px;
@@ -1133,11 +1134,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         font-size: 3rem;
     }
 
-    .grid__item--descr {
-        font-size: 1.5rem;
-        margin-bottom: 3rem;
-    }
-
+  
     input[type="text"],
     [type="email"] {
     background-color: rgba(255, 255, 255, 0.15);
@@ -1215,18 +1212,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
   
 }
-@media only screen and (max-width: 950px) {
-    .card__img {
-            width: 300px;
-            height: 205px; 
-        }
-        .card__title1 {
-            font-size: 1rem;
-        }
-        .card__title2 {
-            font-size: 1rem;
-        }
-}
+
 @media only screen and (max-width: 800px) {
     #top {
         min-height: 800px;
@@ -1271,14 +1257,11 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         font-size: 3rem;
     }
     
+
     #modal {
-        width: 70%;
+        width: 80%;
     }
 
-    .card__img {
-         width: 400px;
-    height: 255px;
-    }
 
     #invisible-flexItem {
         display: none;
