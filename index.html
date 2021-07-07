@@ -116,25 +116,25 @@
 
 <!--Colombia Modal-->
 
-<div class="remodal" data-remodal-id="modal">
-  <button data-remodal-action="close" class="remodal-close"></button>
-  <h1 class="remodal__title">Expat Colombia</h1>
-  <img class="mockup" src="img/mockup.png" alt="responsive">
-  <div class="remodal__description">
-    <h2>Description:</h2>
-  <p>
-    Expat Service for people moving to Colombia. They provide consultations, tours, and assist in housing. 
-  </p>
-  <h2>Built with</h2>
-  <p>HTML<br>
-     CSS<br>
-    Javascript
-</p>
-  <br>
+
+<!-- Modal Background and Modal -->
+<div id="modal-background">
+  <div id="modal">
+    <span id="close-btn">×</span>
+    <img class="modal-img" src="img/mockup.png">
+    <h2 class="modal-title">Expat Colombia</h2>
+  <div class="modal-text">
+    <h3>Description</h3>
+        <p>Expat Service for people moving to Colombia. They provide consultations, tours, and assist in housing.</p>
+    <h3>Dependencies</h3>
+        <p>HTML, CSS, Javascript</p>
   </div>
-  
-  <button data-remodal-action="cancel" class="remodal-cancel">Close</button>
-  <button type="button" data-remodal-action="confirm" class="remodal-confirm" onclick="location.href='https://github.com/Drxl95/Colombia';" value="Go to Github" />Github</button>
+    
+    <div class="buttons">
+      <a href="#">Visit</a>
+      <a href="https://github.com/Drxl95/Colombia">Github</a>
+    </div>
+  </div>
 </div>
         
 
@@ -174,7 +174,7 @@
 <!-- Image row 1 -->
     <div class="row">
   <div class="column">
-    <a href="#modal">
+    <a id="open-btn">
       <div class="container">
         <img src="img/colo-1280-1024.jpg" class="image">
         <div class="overlay">
