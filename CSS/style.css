@@ -1212,6 +1212,15 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
   
 }
+@media only screen and (max-width: 900px) {
+        
+
+    #modal {
+        width: 80%;
+    }
+
+}
+
 
 @media only screen and (max-width: 800px) {
     #top {
@@ -1255,11 +1264,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
     .work__title {
         font-size: 3rem;
-    }
-    
-
-    #modal {
-        width: 80%;
     }
 
 
