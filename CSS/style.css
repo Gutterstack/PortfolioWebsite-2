@@ -768,14 +768,7 @@ color: white;
 }
 
 
-@media only screen and (max-width: 1460px) {
-    .card__img {
-            width: 500px;
-            height: 305px; 
-          display: inline-block;
-          transition: opacity ease-out 450ms;
-        }
-}
+
 @media only screen and (max-width: 1300px) {
     .profile__name {
         padding-top: 7rem;
@@ -931,14 +924,6 @@ color: white;
         width:62px;
         height: 62px;
     }
-    .grid__item1 {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;                
-    }
-    .grid__item2 {
-        -ms-grid-row: 3;
-        -ms-grid-column: 1;                
-    }
 
 }
 @media only screen 
@@ -1002,10 +987,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         font-size: 3rem;
     }
 
-    .grid__item--descr {
-        font-size: 1.5rem;
-        margin-bottom: 3rem;
-    }
 
     input[type="text"],
     [type="email"] {
@@ -1069,14 +1050,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         width:62px;
         height: 62px;
     }
-    .grid__item1 {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;                
-    }
-    .grid__item2 {
-        -ms-grid-row: 3;
-        -ms-grid-column: 1;                
-    }
+
   }
 @media(hover: none) and (pointer: coarse) {
     .top_btn:hover {
@@ -1196,14 +1170,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         width:62px;
         height: 62px;
     }
-    .grid__item1 {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;                
-    }
-    .grid__item2 {
-        -ms-grid-row: 3;
-        -ms-grid-column: 1;                
-    }
+
 }
 @media only screen and (max-width: 1000px) {
     #play-music {
@@ -1615,29 +1582,15 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 } 
 
-@media only screen and (max-width: 480px) {
-    .grid {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
+
 
 @media only screen and (max-width: 454px) {
     #play-music {
         width: 60%;
     }
-    .grid {
-        margin-left: 0;
-        margin-right: 0;
-    }
+
 }
-@media only screen and (max-width: 410px) {
-    .remodal-confirm, .remodal-cancel {
-        padding: 12px 0px!important;
-        font-weight: 600!important;
-    }
-    
-}
+
 @media only screen and (max-width: 400px) {
    
     #top {
@@ -1689,26 +1642,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         font-size: 1rem;
         line-height: 3rem;
     }
-    .card__img {
-        width: 300px;
-        height: 195px;
-    }
-    .card__title1 {
-        font-size: 1rem;
-        color: white;
-        margin-bottom: 0;
-      }
-      .card__title2 {
-        font-size: .85rem;
-        color: white;
-        margin-bottom: 0;
-      }
-      .card__body {
-          font-size: .7rem;
-      }
-      .card__body2 {
-          font-size: .7rem;
-      }
+  
     textarea {
         width: 250px;
         height: 200px;
@@ -1771,14 +1705,7 @@ color: white;
     width:52px;
     height: 52px;
 }
-    .grid__item1 {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;                
-    }
-    .grid__item2 {
-        -ms-grid-row: 3;
-        -ms-grid-column: 1;                
-    } 
+
 }
      
     
@@ -1829,24 +1756,7 @@ color: white;
     #about .button {
         font-size: 1rem;
     }
-/*👉    .grid {
-        display: -ms-grid;
-        display: grid;
-        -webkit-column-gap: 1.75rem;
-           -moz-column-gap: 1.75rem;
-                column-gap: 1.75rem;
-        row-gap: 1.75rem;
-                    grid-template-areas: "griditem1"
-                            "griditem2";
-        justify-items: center;                
-    }👈*/
-    .grid__item--title {
-        font-size: 1.5rem;
-    }
-    .grid__item--descr {
-        font-size: 1rem;
-        margin-bottom: 3rem;
-    }
+
     .contact__title {
         font-size: 2.25rem;
     }
@@ -1915,23 +1825,10 @@ color: white;
     width:52px;
     height: 52px;
 }
-    .grid__item1 {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;                
-    }
-    .grid__item2 {
-        -ms-grid-row: 3;
-        -ms-grid-column: 1;                
-    }
+
 } 
 
-@media only screen and (max-width: 300px) {
-    .card__img {
-        width: 250px;
-        height: 150px;
-    }
-   
-}
+
 @media only screen and (max-width: 255px) {
     #top {
         min-height: 500px;
@@ -1985,24 +1882,7 @@ color: white;
     #about .button {
         font-size: .75rem;
     }
- /*👉   .grid {
-        display: -ms-grid;
-        display: grid;
-        -webkit-column-gap: 1.75rem;
-           -moz-column-gap: 1.75rem;
-                column-gap: 1.75rem;
-        row-gap: 1.75rem;
-                    grid-template-areas: "griditem1"
-                            "griditem2";
-        justify-items: center;                
-    }👈*/
-    .grid__item--title {
-        font-size: 1.25rem;
-    }
-    .grid__item--descr {
-        font-size: .80rem;
-        margin-bottom: 3rem;
-    }
+
     .contact__title {
         font-size: 1.5rem;
     }
@@ -2073,14 +1953,7 @@ color: white;
 .built {
     font-size: .65rem;
 }
-    .grid__item1 {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;                
-    }
-    .grid__item2 {
-        -ms-grid-row: 3;
-        -ms-grid-column: 1;                
-    }
+
 }
 
 
