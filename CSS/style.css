@@ -329,8 +329,6 @@ margin-bottom: 4rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  /*👉  width: 50%;👈*/
-    /*👉padding: 10px 20px;👈*/
     display: flex;
     flex-direction: column;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -338,8 +336,9 @@ margin-bottom: 4rem;
     font-family: var(--main-font);
     animation-name: animatemodal;
     animation-duration: 0.4s;
-    max-height: calc(100vh - 110px);
-    overflow-y: auto;
+    max-height: calc(100vh - 100px);
+    overflow: auto;
+    
   }
   .modal-img {
       max-width: 100%;
