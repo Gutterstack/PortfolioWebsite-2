@@ -754,6 +754,11 @@ color: white;
     padding-bottom: 4px;
     font-family: var(--second-font);
 }
+.built a {
+    color: white;
+ 
+
+}
 
 @keyframes animatemodal {
     from {
