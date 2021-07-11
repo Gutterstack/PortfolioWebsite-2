@@ -38,7 +38,7 @@ html,body {
     display: -ms-flexbox;
     display: flex;
     width: 100%; 
-    padding-right: 1.5rem;
+    padding-right: 1rem;
 }
 
 .page-header__item {
@@ -62,7 +62,7 @@ html,body {
             padding-inline-start: 0;
 }
 .navigation-list li {
-    margin: 1rem 0;
+    margin: .75rem 0;
     font-size: 2rem;
     list-style: none;
 }
@@ -309,6 +309,67 @@ margin-bottom: 4rem;
     border-color:rgb(17, 91, 201);
 }
 
+/*What I Do*/
+#whatIdo {
+    background-image: linear-gradient( rgba(12, 14, 151, 0.788), rgba(16, 19, 175, 0.575)), url("../img/abstract-black.jpg");
+    background-position: center;
+    color: white;
+    font-family: var(--main-font);
+    margin: 0;
+}
+.whatIdo__title {
+    margin: 0;
+    padding: 3rem 0rem;
+
+}
+.whatIdo__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 4rem;
+    padding-top: 3rem;
+}
+.whatIdo__list h1 {
+    padding: 0;
+    font-size: 1.75rem;
+}
+.whatIdo__frontend,
+.whatIdo__backend,
+.whatIdo__design,
+.whatIdo__api,
+.whatIdo__other {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 0rem;
+    list-style: square;
+}
+
+.whatIdo__frontend li,
+.whatIdo__backend li,
+.whatIdo__design li,
+.whatIdo__api li,
+.whatIdo__other li {
+    margin: .25rem 0;
+    font-size: 1.15rem;
+   
+}
+
+.whatIdo__li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 100px;
+}
+
+.design__icon {
+    width: 64px;
+    height: auto;
+}
+
 /*MY WORK SECTION*/
 
 /* modal part */
@@ -434,7 +495,6 @@ h1 {
   .row {
     display: flex;
     flex-wrap: wrap;
-   /*👉 padding: 0 4px;👈*/
   }
   
   .column {
@@ -519,6 +579,7 @@ h1 {
     font-family: var(--main-font);
     font-size: 3rem;
     padding-top: 2rem;
+    padding-bottom: 0rem;
     margin-top: 0rem;;
     
 }
@@ -817,7 +878,7 @@ color: white;
         margin-right: .75rem;
     }
     .navigation-list li {
-        margin-bottom: 1.75rem;
+       
         font-size: 1.75rem;
     }
     
@@ -1115,7 +1176,6 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         margin-right: .75rem;
     }
     .navigation-list li {
-        margin-bottom: 1.75rem;
         font-size: 1.75rem;
     }
     .profile__name {
@@ -1216,15 +1276,31 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     #play-music {
         width: 20%;
     }
-  
+    .design__icon {
+        width: 52px;
+    }
+    .whatIdo__list h1 {
+        font-size: 1.5rem;
+    }
+    .whatIdo__frontend li, .whatIdo__backend li, .whatIdo__design li, .whatIdo__api li, .whatIdo__other li {
+        font-size: 1rem;
+    }
 }
-@media only screen and (max-width: 900px) {
-        
 
+@media only screen and (max-width: 900px) {  
+    .navigation-list li {
+        margin: 0.25rem;
+    }
     #modal {
         width: 80%;
     }
+}
 
+@media only screen and (max-width: 850px) {
+    .whatIdo__li {
+       margin: .75rem; 
+      
+    }
 }
 
 
@@ -1237,7 +1313,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         margin-right: .75rem;
     }
     .navigation-list li {
-        margin-bottom: 1.75rem;
+     
         font-size: 1.75rem;
     }
     #play-music {
@@ -1362,7 +1438,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         margin-right: .75rem;
     }
     .navigation-list li {
-        margin-bottom: 1.75rem;
+      
         font-size: 1.75rem;
     }
     .profile__name {
@@ -1495,7 +1571,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         margin-right: .75rem;
     }
     .navigation-list li {
-        margin-bottom: 1.75rem;
+   
         font-size: 1.75rem;
     }
     .profile__name {
@@ -1622,7 +1698,27 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 } 
 
-
+@media only screen and (max-width: 500px) {
+    .page-header {
+        padding: 0;
+    }
+    .whatIdo__list {
+        flex-direction: column;
+    }
+    .design__icon {
+        width: 72px;
+    }
+    .whatIdo__list h1 {
+        font-size: 2rem;
+    }
+    .whatIdo__li {
+        margin: 1rem;
+        margin-bottom: 2rem;
+    }
+    .whatIdo__frontend li, .whatIdo__backend li, .whatIdo__design li, .whatIdo__api li, .whatIdo__other li {
+        font-size: 1.5rem;
+    }
+}
 
 @media only screen and (max-width: 454px) {
     #play-music {
@@ -1637,6 +1733,9 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         min-height: 600px; 
         
     }
+    .page-header {
+        padding: 0;
+    }
     .page-header__item {
         width: 100px;
         height: 100%;
@@ -1649,7 +1748,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         
     }
     .navigation-list li {
-        margin: .75rem .25rem;
+        margin: 0;
     }
     .profile__name {
         font-size: 1.85rem;
