@@ -294,17 +294,17 @@
         <form  action="https://formsubmit.co/6ce5b337b4114d526a7db57ae4bcaeb1" method="POST" id="contact-form">
         <div class="form__name">
             <label class="standard-label" for="name">Your Name:</label>
-            <input  style="font-family: 'Trispace', sans-serif;" type="text" id="name" required placeholder="Your Name">
+            <input  style="font-family: 'Trispace', sans-serif;" type="text" id="name" name="name" required placeholder="Your Name">
         </div>
         <div class="form__email">
             <label class="standard-label" for="contact-email">Email:</label>
-            <input style="font-family: 'Trispace', sans-serif;" type="email" id="contact-email" required placeholder="Your Email">
+            <input style="font-family: 'Trispace', sans-serif;" type="email" id="contact-email" name="email" required placeholder="Your Email">
             <input type="hidden" name="_subject" value="New Message!">
             <input type="hidden" name="_next" value="https://robertuebelhor.com/sentmsg.html">
         </div>
         <div class="form__message">
             <label class="standard-label" for="message">Message:</label>
-            <textarea style="font-weight: bolder; font-size: 1.25rem; color: white; resize:none; font-family: 'Trispace', sans-serif;" id="message" required placeholder="Type your message here..."></textarea>
+            <textarea style="font-weight: bolder; font-size: 1.25rem; color: white; resize:none; font-family: 'Trispace', sans-serif;" id="message" name="message" required placeholder="Type your message here..."></textarea>
         </div>
         <div>
            <button id="submit" class="form__button" type="submit" method="POST"><span class="form__sendmsg">Send Message</span></button>
