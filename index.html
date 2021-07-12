@@ -85,7 +85,7 @@
         </div>
    
         
-    <a href="files/resume.pdf" download class="button">Download my Resume</a>
+    <!-- <a href="files/resume.pdf" download class="button">Download my Resume</a> -->
 </section>    
 <!--What I Do Section-->
 <section id="whatIdo">
@@ -299,13 +299,15 @@
         <div class="form__email">
             <label class="standard-label" for="contact-email">Email:</label>
             <input style="font-family: 'Trispace', sans-serif;" type="email" id="contact-email" required placeholder="Your Email">
+            <input type="hidden" name="_subject" value="New Message!">
+            <input type="hidden" name="_next" value="https://robertuebelhor.com/sentmsg.html">
         </div>
         <div class="form__message">
             <label class="standard-label" for="message">Message:</label>
             <textarea style="font-weight: bolder; font-size: 1.25rem; color: white; resize:none; font-family: 'Trispace', sans-serif;" id="message" required placeholder="Type your message here..."></textarea>
         </div>
         <div>
-           <button id="submit" href="sentmsg.html" class="form__button" type="submit"><span class="form__sendmsg">Send Message</span></button>
+           <button id="submit" class="form__button" type="submit" action="https://formsubmit.co/uebelhorr@gmail.com" method="POST"><span class="form__sendmsg">Send Message</span></button>
         </div>
         </form>
     
