@@ -24,10 +24,20 @@
 
 <body>
 <section id="top">  
+  <!-- <div style="position:absolute;">
+
+  </div>
+  <audio id="player" src="media/01 Eternal.mp3"></audio>
+<div id="play-music">
+  <h3>Play Music?</h3>
+  <i class="fas fa-play fa-2x" class="play-music-button" onclick="document.getElementById('player').play()"></i>
+  <i class="fas fa-pause fa-2x" class="pause-music-button" onclick="document.getElementById('player').pause()"></i>    
+</div> -->
+          
     <header class="page-header">
         <img class="page-header__item" src="img/favicon.png" alt="logo"> 
         <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
+            <ul id="navBarLists" role="menubar" class="navigation-list">
                 <li role="presentation">
                     <a href="#about" role="menuitem" class="navigation-list__item"><span class="nav_border">About</span></a>
                 </li>
@@ -40,6 +50,8 @@
                 <li role="presentation">
                     <a href="#contact" role="menuitem" class="navigation-list__item"><span class="nav_border">Contact</span></a>
                 </li> 
+           
+  
                 <li role="presentation">
                     <audio id="player" src="media/01 Eternal.mp3"></audio>
 <div id="play-music">

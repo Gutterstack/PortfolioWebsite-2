@@ -127,7 +127,11 @@ html,body {
     font-size: 1rem;
     width: 10%;
     margin: 0;
-    float: right;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 6%;
+    left: 50%;
 }
 #play-music h3 {
     margin-top: 0;
@@ -163,7 +167,7 @@ html,body {
     background-image: -o-linear-gradient( rgba(8, 8, 37, 0.8), rgba(0, 15, 80, 0.0.765)), url("../img/pic2.jpg");
     background-image: -o-linear-gradient( rgba(8, 8, 37, 0.8), rgba(0, 15, 80, 0.765)), url("../img/pic2.jpg");
     background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(8, 8, 37, 0.8)), to(rgba(0, 15, 80, 0.765))), url("../img/pic2.jpg");
-    background-image: linear-gradient( rgba(8, 8, 37, 0.8), rgba(0, 15, 80, 0.765)), url("../img/pic2.jpg");
+    background-image: linear-gradient( rgba(8, 8, 37, 0.85), rgba(0, 15, 80, 0.675)), url("../img/pic2.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -183,6 +187,7 @@ html,body {
 .profile__name {
     padding-top: 7rem;
     font-size: 4rem;
+    margin-bottom: 2rem;
     font-family: var(--main-font);
 }
 .profile__dev {
@@ -191,7 +196,7 @@ html,body {
 
 }
 .social-media {
-    margin-top: 8rem;
+    margin-top: 3rem;
     padding-bottom: 2rem;
     -webkit-padding-start: 0%;
             padding-inline-start: 0%;
@@ -199,7 +204,7 @@ html,body {
 .social-media li {
     display: inline-block;
     list-style: none;
-    margin: 0 6%;
+    margin: 0 4%;
 }
 
 .social-media img {
@@ -1625,17 +1630,27 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 
 }
 
-@media only screen and (max-width: 650px) {
+/*👉@media only screen and (max-width: 650px) {
     #play-music {
         width: 60%;
         padding-left: 7rem;
     }
-}
+}👈*/
 
 @media only screen and (max-width: 600px) {
     #play-music {
-        width: 35%;
+    /*👉    width: 35%;👈*/
         padding-left: 0rem;
+    }
+    #play-music h3 {
+        font-size: 1rem;
+    }
+
+    .fa-play {
+        margin-right: .5rem;
+    }
+    .fa-play, .fa-pause {
+        font-size: 1.65rem;
     }
     #top {
         min-height: 600px;
@@ -1769,6 +1784,22 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 } 
 
 @media only screen and (max-width: 500px) {
+    #play-music {
+        /*👉top: 29%;
+        left: 85%;👈*/
+        position: static;
+        margin-top: 2rem;
+        width: 30%;
+    }
+    #play-music h3 {
+        font-size: .85rem;
+    }
+    .fa-play {
+        margin-right: .25rem;
+    }
+    .fa-play, .fa-pause {
+        font-size: 1.25rem;
+    }
     .page-header {
         padding: 0;
     }
@@ -1798,15 +1829,19 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 }
 
-@media only screen and (max-width: 454px) {
+/*👉@media only screen and (max-width: 454px) {
     #play-music {
         width: 60%;
     }
 
-}
+}👈*/
 
 @media only screen and (max-width: 400px) {
    
+    #play-music {
+        top: 27%;
+    }
+
     #top {
         min-height: 600px; 
         
@@ -1931,6 +1966,10 @@ color: white;
         min-height: 600px; 
         /* min-height: auto;  change by amit */
     }
+    #play-music {
+        top: 25%;
+        left: 82%;
+    }
     
     .page-header {
         padding-right: 1rem;
@@ -2042,8 +2081,13 @@ color: white;
     width:52px;
     height: 52px;
 }
-
 } 
+
+@media only screen and (max-width: 320px) {
+    #play-music {
+        width: 45%;
+    }
+}
 
 
 @media only screen and (max-width: 255px) {
