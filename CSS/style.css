@@ -1654,15 +1654,10 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         visibility: hidden;
     }
     label{
-        /*👉width: 170px;👈*/
-       /*👉 height: 60px;👈*/
         position: absolute;
         top: 4%;
         right: -4%;
         transform: translate(-50%,-50%);
-    
-/*👉        box-shadow: 2px 5px 5px 3px rgba(0,0,0,.3);
-        border-radius: 10px;👈*/
     }
     label div#nav{
         position: absolute;
