@@ -1670,7 +1670,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         top: 45%;
         width:120px; 
         opacity: 0;
-        transition: 1s left;
+        transition: 1s right;
     }
 
     a{
@@ -1705,7 +1705,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
         left: -235%;
         opacity: 1;
         transition: 1s opacity,
-                    .3s left;
+                    .3s right;
     }
     #play-music {
     /*👉    width: 35%;👈*/
