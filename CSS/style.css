@@ -1658,7 +1658,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
        /*👉 height: 60px;👈*/
         position: absolute;
         top: 4%;
-        right: -5%;
+        right: -4%;
         transform: translate(-50%,-50%);
     
 /*👉        box-shadow: 2px 5px 5px 3px rgba(0,0,0,.3);
@@ -1702,7 +1702,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     }
 
     input:checked + div#nav{
-        left: -200%;
+        left: -235%;
         opacity: 1;
         transition: 1s opacity,
                     .3s left;
