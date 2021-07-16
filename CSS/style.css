@@ -34,6 +34,9 @@ html,body {
 	-moz-text-size-adjust: none;
 	-ms-text-size-adjust: none;
 }
+#burger-show {
+    display: none;
+}
 .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -879,7 +882,7 @@ color: white;
     right: 0px;
     text-decoration: none;
     font-size: 12px;
-    padding: .35em;
+    padding: 1em;
     display: none;
 }
 .back-to-top:hover .fa-2x,
@@ -1638,6 +1641,72 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
 }👈*/
 
 @media only screen and (max-width: 600px) {
+    #burger-show {
+        display: initial;
+    }
+    #navBarLists {
+       display: none;
+    }
+
+    input[type="checkbox"]{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    label{
+        /*👉width: 170px;👈*/
+       /*👉 height: 60px;👈*/
+        position: absolute;
+        top: 4%;
+        right: -5%;
+        transform: translate(-50%,-50%);
+    
+/*👉        box-shadow: 2px 5px 5px 3px rgba(0,0,0,.3);
+        border-radius: 10px;👈*/
+    }
+    label div#nav{
+        position: absolute;
+        right: 600%;
+        top: 45%;
+        width:120px; 
+        opacity: 0;
+        transition: 1s left;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    label div#nav ul{
+        margin: 0;
+        padding: 0;
+        
+    }
+    #burger-icon {
+        font-size: 25px;
+        line-height: 60px;
+        margin-left: 10px;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    label div#nav ul li{
+        text-align: center;
+        width: 120px;
+        list-style-type: none;
+        padding: 8px;
+        font-family: var(--main-font);
+       
+    }
+
+    input:checked + div#nav{
+        left: -200%;
+        opacity: 1;
+        transition: 1s opacity,
+                    .3s left;
+    }
     #play-music {
     /*👉    width: 35%;👈*/
         padding-left: 0rem;
@@ -1962,6 +2031,12 @@ color: white;
      
     
 @media only screen and (max-width: 359px) {
+    label {
+        font-size: 1rem;
+    }
+    label div#nav ul li {
+        padding: 5px;
+    }
     #top {
         min-height: 600px; 
         /* min-height: auto;  change by amit */
